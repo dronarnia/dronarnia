@@ -54,11 +54,6 @@ const Navbar = () => {
               Підтримка
             </Link>
           </li>
-          <li className="navbar-item" style={{padding: "0px"}}>
-            <Link className="navbar-item" to="/contact/examples">
-              Veteranka
-            </Link>
-          </li>
           {/* <div class="navbar-item">
 
                 <Link class="button" to="/about">
@@ -66,24 +61,33 @@ const Navbar = () => {
                 </Link>
 
           </div> */}
+          {/*
           <li className="navbar-end">
             <Link className="navbar-item" to="/contact">
-              {/* <span className="icon">
+              <span className="icon">
                 <img src={github} alt="Github" />
-              </span> */}
+              </span>
               UA
             </Link>
           </li>
           <li className="navbar-item" style={{padding: "0px"}}>
             <Link className="navbar-item" to="/contact/examples">
-              {/* <span className="icon">
-                <img src={github} alt="Github" />
-              </span> */}
               EN
             </Link>
           </li>
+          */}
+          <li className="navbar-end" style={{padding: "0px"}}>
+            <a
+              className="navbar-item"
+              href="https://www.uwvm.org.ua/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Veteranka
+            </a>
+          </li>
         </ul>
-        
+
       </div>
     </nav>
   );

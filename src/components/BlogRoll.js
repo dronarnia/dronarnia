@@ -5,20 +5,41 @@ import PreviewCompatibleImage from './PreviewCompatibleImage'
 
 
 const BlogRollTemplate = (props) => {
-  
+
   const { edges: posts } = props.data.allMarkdownRemark;
 
   return (
-    <div className="columns is-multiline">
+    <div className="columns">
       {posts &&
         posts.map(({ node: post }) => (
-          <div className="is-parent column is-6" key={post.id}>
-            <article
-              className={`blog-list-item tile is-child box notification ${
-                post.frontmatter.featuredpost ? 'is-featured' : ''
-              }`}
-            >
+          <div className="column is-3" key={post.id}>
+
+              <div className="has-text-centered">
+                <div
+                  style={{
+                    width: "100%",
+                    display: "inline-block",
+                    marginBottom: ".75rem",
+                  }}
+                >
+                  <Link to={post.fields.slug}>
+                    <PreviewCompatibleImage imageInfo={post.frontmatter.featuredimage} />
+                  </Link>
+
+
+                </div>
+                {/*
+                <p class="title is-6">{post.frontmatter.title}</p>
+                */}
+
+                <Link to={post.fields.slug}>
+                  {post.frontmatter.title}
+                </Link>
+              </div>
+
+              {/*
               <header>
+
                 {post?.frontmatter?.featuredimage && (
                   <div className="featured-thumbnail">
                     <PreviewCompatibleImage
@@ -43,20 +64,27 @@ const BlogRollTemplate = (props) => {
                     {post.frontmatter.title}
                   </Link>
                   <span> &bull; </span>
+                  <br />
+                  <br />
                   <span className="subtitle is-size-5 is-block">
                     {post.frontmatter.date}
                   </span>
                 </p>
               </header>
+              */}
+
+              {/*
               <p>
                 {post.excerpt}
                 <br />
                 <br />
                 <Link className="button" to={post.fields.slug}>
-                  Keep Reading →
+                  Переглянути
                 </Link>
               </p>
-            </article>
+              */}
+
+
           </div>
         ))}
     </div>
@@ -83,7 +111,7 @@ export default function BlogRoll() {
           ) {
             edges {
               node {
-                excerpt(pruneLength: 400)
+                excerpt(pruneLength: 200)
                 id
                 fields {
                   slug
@@ -96,7 +124,7 @@ export default function BlogRoll() {
                   featuredimage {
                     childImageSharp {
                       gatsbyImageData(
-                        width: 120
+                        width: 240
                         quality: 100
                         layout: CONSTRAINED
                       )
