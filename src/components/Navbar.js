@@ -8,15 +8,14 @@ const Navbar = () => {
 
   return (
     <nav
-      className="navbar is-transparent"
+      className="navbar is-fixed-top has-shadow pr-4 pl-4"
       role="navigation"
       aria-label="main-navigation"
     >
-      <div className="container">
         <div className="navbar-brand">
           <Link to="/" className="navbar-item" title="Logo" style={{ paddingTop: "0", paddingBottom: "0" }}>
             <img src={logo} alt="Dronarnia" style={{ height: "120px", width: "auto", marginRight: ".75rem", padding: "0" }} />
-            <span style={{ textTransform: "uppercase" }}>Dronarnia</span>
+            <span style={{ textTransform: "uppercase" }}>Дронарка</span>
           </Link>
           {/* Hamburger menu */}
           <button
@@ -29,54 +28,49 @@ const Navbar = () => {
             <span />
           </button>
         </div>
-        <ul id="navMenu" className={` navbar-start has-text-centered navbar-menu ${isActive && "is-active"}`}>
-          {/* TODO: inline override of padding is a result of refactoring
-              to a ul for accessibilty purposes, would like to see a css
-              re-write that makes this unneccesary.
+        <div id="navMenu" className={` navbar-start has-text-centered navbar-menu ${isActive && "is-active"}`}>
+          {/*
+          TODO: inline override of padding is a result of refactoring
+          to a ul for accessibilty purposes, would like to see a css
+          re-write that makes this unneccesary.
           */}
-          <li className="navbar-item" style={{padding: "0px"}}>
-            <Link className="navbar-item" to="/about">
-              Про нас
+          <div className="navbar-end">
+            <Link className="navbar-item" activeClassName="is-active" to="/">
+              Головна
             </Link>
-          </li>
-          {/* <li className="navbar-item" style={{padding: "0px"}}>
+            <Link className="navbar-item" activeClassName="is-active" to="/products">
+              Ветеранка
+            </Link>
+            <Link className="navbar-item" activeClassName="is-active" to="/about">
+              Часті Запитання
+            </Link>
+          {/*
+          <li className="navbar-item" style={{padding: "0px"}}>
             <Link className="navbar-item" to="/products">
               Проекти
             </Link>
-          </li> */}
-          <li className="navbar-item" style={{padding: "0px"}}>
-            <Link className="navbar-item" to="/blog">
+          </li>
+            <Link className="navbar-item" activeClassName="is-active" to="/blog">
               Проекти
             </Link>
-          </li>
-          <li className="navbar-item" style={{padding: "0px"}}>
+            */}
+            <div class="navbar-item">
+              <Link className="button is-warning is-rounded" to="/contact">
+                Підтримати
+              </Link>
+            </div>
             <Link className="navbar-item" to="/contact">
-              Підтримка
-            </Link>
-          </li>
-          {/* <div class="navbar-item">
-
-                <Link class="button" to="/about">
-                  Підтримка
-                </Link>
-
-          </div> */}
-          {/*
-          <li className="navbar-end">
-            <Link className="navbar-item" to="/contact">
-              <span className="icon">
-                <img src={github} alt="Github" />
-              </span>
               UA
             </Link>
-          </li>
-          <li className="navbar-item" style={{padding: "0px"}}>
             <Link className="navbar-item" to="/contact/examples">
               EN
             </Link>
+          {/*
+          <li className="navbar-end">
           </li>
-          */}
-          <li className="navbar-end" style={{padding: "0px"}}>
+          <li className="navbar-item" style={{padding: "0px"}}>
+          </li>
+
             <a
               className="navbar-item"
               href="https://www.uwvm.org.ua/"
@@ -85,10 +79,10 @@ const Navbar = () => {
             >
               Veteranka
             </a>
-          </li>
-        </ul>
+            */}
+            </div>
+        </div>
 
-      </div>
     </nav>
   );
 };

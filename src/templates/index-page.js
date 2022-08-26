@@ -6,6 +6,7 @@ import { getImage } from "gatsby-plugin-image";
 import Layout from "../components/Layout";
 import Features from "../components/Features";
 import BlogRoll from "../components/BlogRoll";
+import FeatureRoll from "../components/FeatureRoll";
 import FullWidthImage from "../components/FullWidthImage";
 
 // eslint-disable-next-line
@@ -23,20 +24,44 @@ export const IndexPageTemplate = ({
   return (
     <div>
       <FullWidthImage img={heroImage} title={title} subheading={subheading} />
-      <section className="section section--gradient">
+      <section className="section">
+
+
         <div className="container">
           <div className="section">
             <div className="columns">
               <div className="column is-10 is-offset-1">
                 <div className="content">
                   <div className="content">
-                    <div className="tile">
-                      <h1 className="title">{mainpitch.title}</h1>
-                    </div>
-                    <div className="tile">
-                      <h3 className="subtitle">{mainpitch.description}</h3>
-                    </div>
+
+                    <nav class="level mb-6">
+                      <div class="level-item has-text-centered">
+                        <div>
+                          <p class="title">3,456</p>
+                          <p class="heading">Tweets</p>
+                        </div>
+                      </div>
+                      <div class="level-item has-text-centered">
+                        <div>
+                          <p class="title">123</p>
+                          <p class="heading">Following</p>
+                        </div>
+                      </div>
+                      <div class="level-item has-text-centered">
+                        <div>
+                          <p class="title">456K</p>
+                          <p class="heading">Followers</p>
+                        </div>
+                      </div>
+                      <div class="level-item has-text-centered">
+                        <div>
+                          <p class="title">789</p>
+                          <p class="heading">Likes</p>
+                        </div>
+                      </div>
+                    </nav>
                   </div>
+
                   {/*
                   <Features gridItems={intro.blurbs} />
                   <div className="columns">
@@ -47,7 +72,7 @@ export const IndexPageTemplate = ({
                     </div>
                   </div>
                   */}
-                  <BlogRoll />
+                  <FeatureRoll />
                   {/*
                   <div className="column is-12">
                     <h3 className="has-text-weight-semibold is-size-2">
@@ -61,15 +86,14 @@ export const IndexPageTemplate = ({
                     </div>
                   </div>
                   */}
-                  <div className="columns">
-                    <div className="column is-12">
-                      <h3 className="has-text-weight-semibold is-size-2">
-                        {heading}
-                      </h3>
+
+
+                      <h1 className="title">{mainpitch.title}</h1>
+                      <h3 className="">{mainpitch.description}</h3>
+                      <h4 className="">{heading}</h4>
                       <p>{description}</p>
-                    </div>
-                  </div>
-                    
+
+
                 </div>
               </div>
             </div>

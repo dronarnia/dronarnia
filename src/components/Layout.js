@@ -11,7 +11,7 @@ const TemplateWrapper = ({ children }) => {
   return (
     <div>
       <Helmet>
-        <html lang="en" />
+        <html lang="en" class="has-navbar-fixed-top" />
         <title>{title}</title>
         <meta name="description" content={description} />
 
@@ -45,7 +45,7 @@ const TemplateWrapper = ({ children }) => {
         <meta property="og:url" content="/" />
         <meta
           property="og:image"
-          content={`${withPrefix("/")}img/dronarnia/og-images/og-image.jpg`}
+          content={`${withPrefix("/")}img/dronarnia/og-image/og-image.jpg`}
         />
       </Helmet>
       <Navbar />

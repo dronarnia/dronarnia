@@ -1,7 +1,8 @@
 ---
 templateKey: 'product-page'
 path: /products
-title: Our Coffee
+title: Ветеранка
+subheading: Жіночий ветеранський рух
 image: /img/jumbotron.jpg
 heading: Great coffee with a conscience
 description: >-

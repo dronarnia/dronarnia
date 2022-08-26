@@ -9,7 +9,7 @@ const BlogRollTemplate = (props) => {
   const { edges: posts } = props.data.allMarkdownRemark;
 
   return (
-    <div className="columns">
+    <div className="columns is-multiline">
       {posts &&
         posts.map(({ node: post }) => (
           <div className="column is-3" key={post.id}>

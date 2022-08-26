@@ -8,7 +8,7 @@ import twitter from "../img/social/twitter.svg";
 import vimeo from "../img/social/vimeo.svg";
 
 const Footer = () => {
-  
+
     return (
       <footer className="footer has-background-black has-text-white-ter">
         <div className="content has-text-centered">
@@ -21,30 +21,30 @@ const Footer = () => {
         <div className="content has-text-centered has-background-black has-text-white-ter">
           <div className="container has-background-black has-text-white-ter">
             <div style={{ maxWidth: "100vw" }} className="columns">
-              <div className="column is-4">
+              <div className="column is-3">
                 <section className="menu">
-                  <ul className="menu-list">
-                    <li>
+                  <div className="menu-list">
+                    <div>
                       <Link to="/" className="navbar-item">
                         Home
                       </Link>
-                    </li>
-                    <li>
+                    </div>
+                    <div>
                       <Link className="navbar-item" to="/about">
                         About
                       </Link>
-                    </li>
-                    <li>
+                    </div>
+                    <div>
                       <Link className="navbar-item" to="/products">
                         Products
                       </Link>
-                    </li>
-                    <li>
+                    </div>
+                    <div>
                       <Link className="navbar-item" to="/contact/examples">
                         Form Examples
                       </Link>
-                    </li>
-                    <li>
+                    </div>
+                    <div>
                       <a
                         className="navbar-item"
                         href="/admin/"
@@ -53,24 +53,24 @@ const Footer = () => {
                       >
                         Admin
                       </a>
-                    </li>
-                  </ul>
+                    </div>
+                  </div>
                 </section>
               </div>
               <div className="column is-4">
                 <section>
-                  <ul className="menu-list">
-                    <li>
+                  <div className="menu-list">
+                    <div>
                       <Link className="navbar-item" to="/blog">
                         Latest Stories
                       </Link>
-                    </li>
-                    <li>
+                    </div>
+                    <div>
                       <Link className="navbar-item" to="/contact">
                         Contact
                       </Link>
-                    </li>
-                  </ul>
+                    </div>
+                  </div>
                 </section>
               </div>
               <div className="column is-4 social">
