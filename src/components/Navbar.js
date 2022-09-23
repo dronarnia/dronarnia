@@ -15,7 +15,7 @@ const Navbar = () => {
         <div className="navbar-brand">
           <Link to="/" className="navbar-item" title="Logo" style={{ paddingTop: "0", paddingBottom: "0" }}>
             <img src={logo} alt="Dronarnia" style={{ height: "120px", width: "auto", marginRight: ".75rem", padding: "0" }} />
-            <span style={{ textTransform: "uppercase" }}>Дронарка</span>
+            <span style={{ textTransform: "uppercase" }}>Дронарня</span>
           </Link>
           {/* Hamburger menu */}
           <button
@@ -35,6 +35,7 @@ const Navbar = () => {
           re-write that makes this unneccesary.
           */}
           <div className="navbar-end">
+            {/*
             <Link className="navbar-item" activeClassName="is-active" to="/">
               Головна
             </Link>
@@ -44,6 +45,7 @@ const Navbar = () => {
             <Link className="navbar-item" activeClassName="is-active" to="/about">
               Часті Запитання
             </Link>
+            */}
           {/*
           <li className="navbar-item" style={{padding: "0px"}}>
             <Link className="navbar-item" to="/products">
@@ -55,16 +57,18 @@ const Navbar = () => {
             </Link>
             */}
             <div class="navbar-item">
-              <Link className="button is-warning is-rounded" to="/contact">
+              <Link className="button is-warning is-rounded" to="/donate">
                 Підтримати
               </Link>
             </div>
+            {/*
             <Link className="navbar-item" to="/contact">
               UA
             </Link>
             <Link className="navbar-item" to="/contact/examples">
               EN
             </Link>
+            */}
           {/*
           <li className="navbar-end">
           </li>
