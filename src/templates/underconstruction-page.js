@@ -15,7 +15,7 @@ export const UnderconstructionPageTemplate = ({ title, content, contentComponent
         <div class="container has-text-centered">
           <PageContent className="content" content={content} />
 
-          <Link className="button is-warning is-rounded" to="/donate">
+          <Link className="button is-warning is-large" to="/donate">
             Підтримати
           </Link>
         </div>

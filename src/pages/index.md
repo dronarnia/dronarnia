@@ -9,7 +9,7 @@ bgImage: https://images.unsplash.com/photo-1508138221679-760a23a2285b?ixlib=rb-1
 
 <!-- ![Dronarnia Logo](/img/dronarnia/logo/dronarnia_logo_ua.svg) -->
 
-<img src="/img/dronarnia/logo/dronarnia_logo_ua.svg" alt="Dronarnia Logo" width="240"/>
+<img src="/img/dronarnia/logo/dronarnia_logo_ua.svg" alt="Dronarnia Logo" width="200"/>
 
 
 <!-- ![Dronarnia Logo](/img/dronarnia/logo/dronarnia_logo_en.svg) -->
@@ -19,3 +19,5 @@ bgImage: https://images.unsplash.com/photo-1508138221679-760a23a2285b?ixlib=rb-1
 Наразі сайт у розробці
 
 Ви можете підтримати нас на сторінці підтримки
+
+<!-- <a class="button is-warning is-large" href="/donate">Підтримати</a> -->

@@ -40,14 +40,14 @@ name: Kateryna Pryimak
 
 ## CRYPTOCURRENCY
 
-ВТС: 3QY5qzb9ZV6kAXZoRx8MiydDpdYXe5M9Nh
+ВТС: <small>3QY5qzb9ZV6kAXZoRx8MiydDpdYXe5M9Nh</small>
 
-ETH: 0x09D25f3563b796429479B28c1E6FE00F967168eD
+ETH: <small>0x09D25f3563b796429479B28c1E6FE00F967168eD</small>
 
-USDT: TDERHMxwWYwpbDBqcNfNUmTkn3FGZnvEQC
+USDT: <small>TDERHMxwWYwpbDBqcNfNUmTkn3FGZnvEQC</small>
 
-DOGE: DKg68hnn44Vbss2DBv1ahynoZyrNB4Kbps
+DOGE: <small>DKg68hnn44Vbss2DBv1ahynoZyrNB4Kbps</small>
 
-DASH: XqBVF2VGkoQU6e37NVZWRHqcBaLJcCaw98
+DASH: <small>XqBVF2VGkoQU6e37NVZWRHqcBaLJcCaw98</small>
 
-KUN 3PCqbRbyqC6zDpQD1U1jfedHUdX93EGyjbT
+KUN: <small>3PCqbRbyqC6zDpQD1U1jfedHUdX93EGyjbT</small>

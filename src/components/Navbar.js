@@ -8,12 +8,12 @@ const Navbar = () => {
 
   return (
     <nav
-      className="navbar is-fixed-top has-shadow pr-4 pl-4"
+      className="navbar is-fixed-top has-shadow"
       role="navigation"
       aria-label="main-navigation"
     >
         <div className="navbar-brand">
-          <Link to="/" className="navbar-item" title="Logo" style={{ paddingTop: "0", paddingBottom: "0" }}>
+          <Link to="/" className="navbar-item" activeClassName="is-active" title="Logo" style={{ paddingTop: "0", paddingBottom: "0" }}>
             <img src={logo} alt="Dronarnia" style={{ height: "120px", width: "auto", marginRight: ".75rem", padding: "0" }} />
             <span style={{ textTransform: "uppercase" }}>Дронарня</span>
           </Link>
@@ -35,10 +35,10 @@ const Navbar = () => {
           re-write that makes this unneccesary.
           */}
           <div className="navbar-end">
-            {/*
             <Link className="navbar-item" activeClassName="is-active" to="/">
               Головна
             </Link>
+            {/*
             <Link className="navbar-item" activeClassName="is-active" to="/products">
               Ветеранка
             </Link>
@@ -57,7 +57,7 @@ const Navbar = () => {
             </Link>
             */}
             <div class="navbar-item">
-              <Link className="button is-warning is-rounded" to="/donate">
+              <Link className="button is-warning" to="/donate">
                 Підтримати
               </Link>
             </div>

@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: "Dronarnia Laboratory | Лабораторія Дронарнія",
+    title: "Дронарня | Dronarnia",
     description:
-      "This repo contains an example business website that is built with Gatsby, and Netlify CMS. It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution.",
+      "Дронарня - українські дрони для фронту",
   },
   plugins: [
     "gatsby-plugin-react-helmet",
