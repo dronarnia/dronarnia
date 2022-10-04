@@ -1,11 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Link, graphql } from "gatsby";
+import { graphql } from "gatsby";
 import { getImage } from "gatsby-plugin-image";
 
 import Layout from "../components/Layout";
 import Features from "../components/Features";
-import BlogRoll from "../components/BlogRoll";
+// import BlogRoll from "../components/BlogRoll";
 import FeatureRoll from "../components/FeatureRoll";
 import FullWidthImage from "../components/FullWidthImage";
 
@@ -15,7 +15,7 @@ export const IndexPageTemplate = ({
   title,
   heading,
   subheading,
-  mainpitch,
+  // mainpitch,
   description,
   intro,
 }) => {
@@ -23,7 +23,7 @@ export const IndexPageTemplate = ({
 
   return (
     <div>
-      <FullWidthImage img={heroImage} title={title} subheading={subheading} />
+      <FullWidthImage img={heroImage} heading={heading} subheading={subheading} />
       <section className="section">
 
 
@@ -32,6 +32,7 @@ export const IndexPageTemplate = ({
             <div className="columns">
               <div className="column is-10 is-offset-1">
                 <div className="content">
+                {/*
                   <div className="content">
 
                     <nav class="level mb-6">
@@ -60,10 +61,12 @@ export const IndexPageTemplate = ({
                         </div>
                       </div>
                     </nav>
-                  </div>
 
-                  {/*
+                  </div>
+                  */}
+
                   <Features gridItems={intro.blurbs} />
+                  {/*
                   <div className="columns">
                     <div className="column is-12 has-text-centered">
                       <Link className="btn" to="/products">
@@ -87,10 +90,11 @@ export const IndexPageTemplate = ({
                   </div>
                   */}
 
-
+                      {/*
                       <h1 className="title">{mainpitch.title}</h1>
                       <h3 className="">{mainpitch.description}</h3>
-                      <h4 className="">{heading}</h4>
+                      */}
+                      <h1 className="">{title}</h1>
                       <p>{description}</p>
 
 
@@ -109,7 +113,7 @@ IndexPageTemplate.propTypes = {
   title: PropTypes.string,
   heading: PropTypes.string,
   subheading: PropTypes.string,
-  mainpitch: PropTypes.object,
+  // mainpitch: PropTypes.object,
   description: PropTypes.string,
   intro: PropTypes.shape({
     blurbs: PropTypes.array,
@@ -126,7 +130,7 @@ const IndexPage = ({ data }) => {
         title={frontmatter.title}
         heading={frontmatter.heading}
         subheading={frontmatter.subheading}
-        mainpitch={frontmatter.mainpitch}
+        // mainpitch={frontmatter.mainpitch}
         description={frontmatter.description}
         intro={frontmatter.intro}
       />
@@ -156,10 +160,6 @@ export const pageQuery = graphql`
         }
         heading
         subheading
-        mainpitch {
-          title
-          description
-        }
         description
         intro {
           blurbs {

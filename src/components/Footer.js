@@ -1,114 +1,110 @@
 import * as React from "react";
-import { Link } from "gatsby";
+// import { Link } from "gatsby";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSkullCrossbones } from '@fortawesome/free-solid-svg-icons'
 
-import logo from "../img/logo.svg";
-import facebook from "../img/social/facebook.svg";
-import instagram from "../img/social/instagram.svg";
-import twitter from "../img/social/twitter.svg";
-import vimeo from "../img/social/vimeo.svg";
+import mainlogo from "../img/dronarnia/dronarnia_logo_white.svg";
 
 const Footer = () => {
 
-    return (
-      <footer className="footer has-background-black has-text-white-ter">
-        <div className="content has-text-centered">
-          <img
-            src={logo}
-            alt="Kaldi"
-            style={{ width: "14em", height: "10em" }}
-          />
-        </div>
-        <div className="content has-text-centered has-background-black has-text-white-ter">
-          <div className="container has-background-black has-text-white-ter">
-            <div style={{ maxWidth: "100vw" }} className="columns">
-              <div className="column is-3">
-                <section className="menu">
-                  <div className="menu-list">
-                    <div>
-                      <Link to="/" className="navbar-item">
-                        Home
-                      </Link>
-                    </div>
-                    <div>
-                      <Link className="navbar-item" to="/about">
-                        About
-                      </Link>
-                    </div>
-                    <div>
-                      <Link className="navbar-item" to="/products">
-                        Products
-                      </Link>
-                    </div>
-                    <div>
-                      <Link className="navbar-item" to="/contact/examples">
-                        Form Examples
-                      </Link>
-                    </div>
-                    <div>
-                      <a
-                        className="navbar-item"
-                        href="/admin/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Admin
-                      </a>
-                    </div>
-                  </div>
-                </section>
+return (
+  <footer className="footer has-background-black has-text-white-ter p-6">
+
+
+    {/* <div className="content has-text-centered">
+      <div className="container">
+        <div className="columns">
+
+          <div className="column is-3">
+            <section className="menu">
+              <div className="menu-list">
+                <div>
+                  <Link to="/" className="navbar-item">
+                    Головна
+                  </Link>
+                </div>
+                <div>
+                  <Link className="navbar-item" to="/products">
+                    Продукти
+                  </Link>
+                </div>
               </div>
-              <div className="column is-4">
-                <section>
-                  <div className="menu-list">
-                    <div>
-                      <Link className="navbar-item" to="/blog">
-                        Latest Stories
-                      </Link>
-                    </div>
-                    <div>
-                      <Link className="navbar-item" to="/contact">
-                        Contact
-                      </Link>
-                    </div>
-                  </div>
-                </section>
+            </section>
+          </div>
+
+          <div className="column is-3">
+            <section>
+              <div className="menu-list">
+                <div>
+                  <Link className="navbar-item" to="/products">
+                    Підтримати
+                  </Link>
+                </div>
+                <div>
+                  <Link className="navbar-item" to="/about">
+                    Часті запитання
+                  </Link>
+                </div>
               </div>
-              <div className="column is-4 social">
-                <a title="facebook" href="https://facebook.com">
-                  <img
-                    src={facebook}
-                    alt="Facebook"
-                    style={{ width: "1em", height: "1em" }}
-                  />
-                </a>
-                <a title="twitter" href="https://twitter.com">
-                  <img
-                    className="fas fa-lg"
-                    src={twitter}
-                    alt="Twitter"
-                    style={{ width: "1em", height: "1em" }}
-                  />
-                </a>
-                <a title="instagram" href="https://instagram.com">
-                  <img
-                    src={instagram}
-                    alt="Instagram"
-                    style={{ width: "1em", height: "1em" }}
-                  />
-                </a>
-                <a title="vimeo" href="https://vimeo.com">
-                  <img
-                    src={vimeo}
-                    alt="Vimeo"
-                    style={{ width: "1em", height: "1em" }}
-                  />
-                </a>
+            </section>
+          </div>
+
+          <div className="column is-3">
+            <section>
+              <div className="menu-list">
+                <div>
+                  <Link className="navbar-item" to="/blog">
+                    Новини
+                  </Link>
+                </div>
+                <div>
+                  <a
+                    className="navbar-item"
+                    href="/admin/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Адмінка
+                  </a>
+                </div>
               </div>
+              </section>
             </div>
+
+            <div className="column is-3">
+              <section>
+                <div className="menu-list">
+                  <div>
+                    <Link className="navbar-item" to="/">UA</Link>
+                  </div>
+                  <div>
+                    <Link className="navbar-item" to="/en">EN</Link>
+                  </div>
+                </div>
+              </section>
+            </div>
+
           </div>
         </div>
-      </footer>
-    );
+      </div> */}
+
+      <div className="content has-text-centered">
+        <p>
+          <img
+            src={mainlogo}
+            alt="Дронарня"
+            style={{ width: "40px" }}
+          />
+        </p>
+        <p>
+          <small>
+            ДРОНАРНЯ | DRONARNIA<br/>
+            2022 © Смерть ворогам! <FontAwesomeIcon icon={faSkullCrossbones} size="1x" />
+        </small>
+        </p>
+      </div>
+    </footer>
+  );
 };
 
 export default Footer;

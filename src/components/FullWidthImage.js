@@ -1,25 +1,32 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { GatsbyImage } from "gatsby-plugin-image";
+// import PreviewCompatibleImage from "./PreviewCompatibleImage";
+import mainlogo from "../img/dronarnia/dronarnia_logo_white.svg";
 
 export default function FullWidthImage(props) {
   const {
-    height = 700,
     img,
-    title,
+    imgHeight = 700,
+    imgPosition = "50% center",
+    // logo,
+    // logoHeight = 300,
+    // logoPosition = "50% left",
+    heading,
     subheading,
-    imgPosition = "50% left",
   } = props;
 
   return (
     <React.Fragment>
       <div
-        className="margin-top-0"
+        className=""
         style={{
           display: "grid",
           alignItems: "center",
+          // backgroundColor: "#000",
         }}
       >
+
         {img?.url ? (
           <img
             src={img}
@@ -28,7 +35,7 @@ export default function FullWidthImage(props) {
             style={{
               gridArea: "1/1",
               // You can set a maximum height for the image, if you wish.
-              height: height,
+              height: imgHeight,
               width: "100%",
             }}
             // This is a presentational image, so the alt should be an empty string
@@ -42,17 +49,18 @@ export default function FullWidthImage(props) {
             style={{
               gridArea: "1/1",
               // You can set a maximum height for the image, if you wish.
-              maxHeight: height,
+              maxHeight: imgHeight,
             }}
             layout="fullWidth"
             // You can optionally force an aspect ratio for the generated image
-            aspectratio={3 / 1}
+            aspectratio={1 / 1}
             // This is a presentational image, so the alt should be an empty string
             alt=""
             formats={["auto", "webp", "avif"]}
           />
         )}
-        {(title || subheading) && (
+
+        {(heading || subheading) && (
           <div
             style={{
               // By using the same grid area for both, they are stacked on top of each other
@@ -64,38 +72,51 @@ export default function FullWidthImage(props) {
             }}
           >
             {/* Any content here will be centered in the component */}
-            {title && (
-              <h1
-                className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
+
+            <div className="content has-text-centered mb-6">
+              <img
+                src={mainlogo}
+                alt="Дронарня"
                 style={{
-                  boxShadow:
-                    "rgba(145, 124, 92, .75) 0.5rem 0px 0px, rgba(145, 124, 92, .75) -0.5rem 0px 0px",
-                  backgroundColor: "rgba(145, 124, 92, .75)",
-                  color: "#000",
-                  lineHeight: "1",
+                  width: "100px",
+                  boxShadow: "rgba(0, 0, 0, .5) 0.5rem 0px 0px, rgba(0, 0, 0, .5) -0.5rem 0px 0px",
+                  backgroundColor: "rgba(0, 0, 0, .5)",
+                  padding: "18px 10px",
+                }}
+              />
+            </div>
+
+            {heading && (
+              <div
+                className="title is-size-1 is-size-3-touch has-text-centered"
+                style={{
+                  boxShadow: "rgba(0, 0, 0, .5) 0.5rem 0px 0px, rgba(0, 0, 0, .5) -0.5rem 0px 0px",
+                  backgroundColor: "rgba(0, 0, 0, .5)",
+                  color: "#fff",
+                  // lineHeight: "1",
                   padding: "0.25em",
-                  fontStyle: "italic",
+                  // fontStyle: "italic",
                 }}
               >
-                {title}
-              </h1>
+                {heading}
+              </div>
             )}
+
             {subheading && (
-              <h3
-                className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
+              <div
+                className="subtitle is-size-3 is-size-5-touch has-text-centered"
                 style={{
-                  boxShadow:
-                    "rgba(145, 124, 92, .75) 0.5rem 0px 0px, rgba(145, 124, 92, .75) -0.5rem 0px 0px",
-                  backgroundColor: "rgba(145, 124, 92, .75)",
-                  color: "#000",
-                  lineHeight: "1",
+                  boxShadow: "rgba(0, 0, 0, .5) 0.5rem 0px 0px, rgba(0, 0, 0, .5) -0.5rem 0px 0px",
+                  backgroundColor: "rgba(0, 0, 0, .5)",
+                  color: "#fff",
+                  // lineHeight: "1",
                   padding: "0.25rem",
-                  marginTop: "0.5rem",
-                  fontStyle: "italic",
+                  // marginTop: "0.5rem",
+                  // fontStyle: "italic",
                 }}
               >
                 {subheading}
-              </h3>
+              </div>
             )}
           </div>
         )}
@@ -106,7 +127,9 @@ export default function FullWidthImage(props) {
 
 FullWidthImage.propTypes = {
   img: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  title: PropTypes.string,
-  height: PropTypes.number,
+  imgHeight: PropTypes.number,
+  // logo: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  // logoHeight: PropTypes.number,
+  heading: PropTypes.string,
   subheading: PropTypes.string,
 };

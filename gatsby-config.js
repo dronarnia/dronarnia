@@ -5,6 +5,7 @@ module.exports = {
       "Дронарня - українські дрони для фронту",
   },
   plugins: [
+    "gatsby-plugin-fontawesome-css",
     "gatsby-plugin-react-helmet",
     {
       resolve: "gatsby-plugin-sass",

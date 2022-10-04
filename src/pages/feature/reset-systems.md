@@ -1,38 +1,43 @@
 ---
 templateKey: feature-post
-title: Системи скиду
-subtitle: Для всіх сучасних моделів дронів
+title: Системи скидання
+subtitle: Виготовлення скидів для всіх типів цивільних дронів
 date: 2022-02-22T15:04:10.000Z
-featuredpost: false
-featuredimage: /img/dronarnia/features/io_air_bomb_technical_engineering_drawing_paper_blueprint_15dba6ce-fcc8-4fcc-8c68-9f505be42f47.jpg
-description: >-
-  We’re proud to announce that we’ll be offering a small batch of Jamaica Blue
-  Mountain coffee beans in our store next week.
-tags:
-  - jamaica
-  - green beans
-  - flavor
-  - tasting
+featuredImage: /img/dronarnia/features/IMG_6384_v2.jpg
+
 ---
 
-![chemex](/img/dronarnia/features/io_air_bomb_technical_engineering_drawing_paper_blueprint_15dba6ce-fcc8-4fcc-8c68-9f505be42f47.jpg)
+| Бренди         |
+| :----          |
+| Mavic          |
+| Phantom        |
+| Matrice        |
+| Autel          |
+| Yuneec та інші |
 
-We expect the shipment of a limited quantity of green beans next Monday. We’ll be offering the roasted beans from Tuesday, but quantities are limited, so be quick.
+Наша лабораторія щомісяця виготовляє сотні систем скидання для різних дронів цивільного призначання.
 
-Blue Mountain Peak is the highest mountain in Jamaica and one of the highest peaks in the Caribbean at 7,402 ft. It is the home of Blue Mountain coffee and their famous tours. It is located on the border of the Portland and Saint Thomas parishes of Jamaica.
+![Нова партія систем скидання готова до відправки на фронт](/img/dronarnia/features/photo_2022-07-30_20-21-18.jpg)
 
-## A little history
+Ми виготовляємо масово системи для таких моделей:
+- DJI Mavic 3
+- DJI Mavic 2 pro/zoom/enterprice
+- DJI Mavic AIR 2/2s
+- Autel evo lite/lite+
+- Autel evo 2/dual
 
-The Blue Mountains are considered by many to be a hiker's and camper's paradise. The traditional Blue Mountain trek is a 7-mile hike to the peak and consists of a 3,000-foot increase in elevation. Jamaicans prefer to reach the peak at sunrise, thus the 3–4 hour hike is usually undertaken in darkness. Since the sky is usually very clear in the mornings, Cuba can be seen in the distance.
+До нашої лабораторії долучилось більше сотні волонтерів які вільний час присвячують процесу збірки, пайки та тестуванню скидів.
 
->Some of the plants found on the Blue Mountain cannot be found anywhere else in the world and they are often of a dwarfed sort.
+Ми розробили власний патріотичний мікроконтролер аби зменшити залежність виготовлення систем від китайських плат.
 
-This is mainly due to the cold climate which inhibits growth. The small coffee farming communities of Claverty Cottage and Hagley Gap are located near the peak.
+ФОТО/відео плат
 
-## What you need to know before trying
+Наразі ми плануємо вивести виробництво систем на це кращий рівень та запустити лиття корпусів аби системи були біль надійними при експлуатації та збільшити швидкість виробництва.
 
-Jamaican Blue Mountain Coffee or Jamaica Blue Mountain Coffee is a classification of coffee grown in the Blue Mountains of Jamaica. The best lots of Blue Mountain coffee are noted for their mild flavor and lack of bitterness. Over the past few decades, this coffee has developed a reputation that has made it one of the most expensive and sought-after coffees in the world. Over 80% of all Jamaican Blue Mountain Coffee is exported to Japan. In addition to its use for brewed coffee, the beans are the flavor base of Tia Maria coffee liqueur.
-
-Jamaican Blue Mountain Coffee is a globally protected certification mark, meaning only coffee certified by the Coffee Industry Board of Jamaica can be labeled as such. It comes from a recognized growing region in the Blue Mountain region of Jamaica, and its cultivation is monitored by the Coffee Industry Board of Jamaica.
-
-The Blue Mountains are generally located between Kingston to the south and Port Antonio to the north. Rising 7,402 ft, they are some of the highest mountains in the Caribbean. The climate of the region is cool and misty with high rainfall. The soil is rich, with excellent drainage. This combination of climate and soil is considered ideal for coffee.
+Також ми встановлюємо системи скидання на менш популярні моделі дронів:
+- DJI Phantom 3/4
+- DJI mavic pro/pro platinum 	
+- DJI Matrice 200, 300, 30Т
+- DJI Inspire 1 		
+- Yuneec h520e
+- та інші

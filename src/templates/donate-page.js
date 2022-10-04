@@ -5,17 +5,24 @@ import LayoutUnderconstruction from "../components/LayoutUnderconstruction";
 import Content, { HTMLContent } from "../components/Content";
 
 // eslint-disable-next-line
-export const DonatePageTemplate = ({ title, content, contentComponent }) => {
+export const DonatePageTemplate = ({
+  title,
+  content,
+  contentComponent
+}) => {
   const PageContent = contentComponent || Content;
 
   return (
     <section className="section">
       <div className="container">
-        <div className="columns">
-          <div className="column is-6 is-offset-3">
-            <PageContent className="content" content={content} />
+        <section className="section">
+          <div className="columns">
+            <div className="column is-6 is-offset-3">
+              <h1 className="title is-size-1">{title}</h1>
+              <PageContent className="content" content={content} />
+            </div>
           </div>
-        </div>
+        </section>
       </div>
     </section>
   );

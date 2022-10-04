@@ -1,5 +1,5 @@
 ---
-templateKey: 'product-page'
+templateKey: product-page
 path: /products
 title: Ветеранка
 subheading: Жіночий ветеранський рух

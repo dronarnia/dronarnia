@@ -10,14 +10,11 @@ export const UnderconstructionPageTemplate = ({ title, content, contentComponent
   const PageContent = contentComponent || Content;
 
   return (
-    <section class="hero is-fullheight-with-navbar">
-      <div class="hero-body">
-        <div class="container has-text-centered">
+    <section className="hero is-fullheight-with-navbar">
+      <div className="hero-body">
+        <div className="container has-text-centered">
           <PageContent className="content" content={content} />
-
-          <Link className="button is-warning is-large" to="/donate">
-            Підтримати
-          </Link>
+          <Link className="button is-warning is-large is-responsive" to="/donate">Підтримати</Link>
         </div>
       </div>
     </section>
@@ -26,7 +23,6 @@ export const UnderconstructionPageTemplate = ({ title, content, contentComponent
 
 UnderconstructionPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
-  bgImage: PropTypes.string.isRequired,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
 };
@@ -40,7 +36,6 @@ const UnderconstructionPage = ({ data }) => {
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
         content={post.html}
-        bgImage={post.frontmatter.bgImage}
       />
     </LayoutUnderconstruction>
   );
@@ -52,13 +47,12 @@ UnderconstructionPage.propTypes = {
 
 export default UnderconstructionPage;
 
-export const aboutPageQuery = graphql`
+export const underconstructionPageQuery = graphql`
   query UnderconstructionPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
         title
-        bgImage
       }
     }
   }

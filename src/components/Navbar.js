@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "gatsby";
-import github from "../img/github-icon.svg";
-import logo from "../img/dronarnia/logo.svg";
+
+import logo from "../img/dronarnia/dronarnia_logo_grey.svg";
 
 const Navbar = () => {
   const [isActive, setIsActive] = useState(false);
@@ -29,61 +29,20 @@ const Navbar = () => {
           </button>
         </div>
         <div id="navMenu" className={` navbar-start has-text-centered navbar-menu ${isActive && "is-active"}`}>
-          {/*
-          TODO: inline override of padding is a result of refactoring
-          to a ul for accessibilty purposes, would like to see a css
-          re-write that makes this unneccesary.
-          */}
           <div className="navbar-end">
-            <Link className="navbar-item" activeClassName="is-active" to="/">
-              Головна
-            </Link>
-            {/*
-            <Link className="navbar-item" activeClassName="is-active" to="/products">
-              Ветеранка
-            </Link>
-            <Link className="navbar-item" activeClassName="is-active" to="/about">
-              Часті Запитання
-            </Link>
-            */}
-          {/*
-          <li className="navbar-item" style={{padding: "0px"}}>
-            <Link className="navbar-item" to="/products">
-              Проекти
-            </Link>
-          </li>
-            <Link className="navbar-item" activeClassName="is-active" to="/blog">
-              Проекти
-            </Link>
-            */}
+            <Link className="navbar-item" activeClassName="is-active" to="/">Головна</Link>
+            {/* <Link className="navbar-item" activeClassName="is-active" to="/faq">Часті Запитання</Link>
+            <Link className="navbar-item" activeClassName="is-active" to="/blog">Хроніки</Link>
+            <Link className="navbar-item" activeClassName="is-active" to="/products">Ветеранка</Link> */}
             <div class="navbar-item">
-              <Link className="button is-warning" to="/donate">
-                Підтримати
-              </Link>
+              <div class="buttons has-addons is-centered">
+                <Link className="button is-warning" to="/donate">Підтримати</Link>
+                <a className="button is-info is-light" href="https://airtable.com/shrjr9gavatDWRilm" target="_blank" rel="noopener noreferrer">Подати заявку</a>
+              </div>
             </div>
-            {/*
-            <Link className="navbar-item" to="/contact">
-              UA
-            </Link>
-            <Link className="navbar-item" to="/contact/examples">
-              EN
-            </Link>
-            */}
-          {/*
-          <li className="navbar-end">
-          </li>
-          <li className="navbar-item" style={{padding: "0px"}}>
-          </li>
+            {/* <Link className="navbar-item" to="/main">UA</Link>
+            <Link className="navbar-item" to="/en">EN</Link> */}
 
-            <a
-              className="navbar-item"
-              href="https://www.uwvm.org.ua/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Veteranka
-            </a>
-            */}
             </div>
         </div>
 
