@@ -2,19 +2,15 @@
 templateKey: blog-post
 title: Виготовлення FPV дронів «бандериків» різних розмірів
 date: 2022-02-22T15:04:10.000Z
-featuredpost: false
-featuredimage: /img/dronarnia/features/io_ittle_cute_quadrocopter_drone_dji_air_2_paper_draft_blueprin_5d1a8426-88e9-47b1-80bd-41175b0f17a5.jpg
-description: >-
-  We’re proud to announce that we’ll be offering a small batch of Jamaica Blue
-  Mountain coffee beans in our store next week.
+featuredImage: /img/product_1_0.jpg
+description: Mountain coffee beans in our store next week.
 tags:
-  - jamaica
-  - green beans
-  - flavor
-  - tasting
+  - brewing
+  - chemex
+
 ---
 
-![chemex](/img/dronarnia/features/io_ittle_cute_quadrocopter_drone_dji_air_2_paper_draft_blueprin_5d1a8426-88e9-47b1-80bd-41175b0f17a5.jpg)
+<!-- ![chemex](/img/dronarnia/features/io_ittle_cute_quadrocopter_drone_dji_air_2_paper_draft_blueprin_5d1a8426-88e9-47b1-80bd-41175b0f17a5.jpg) -->
 
 We expect the shipment of a limited quantity of green beans next Monday. We’ll be offering the roasted beans from Tuesday, but quantities are limited, so be quick.
 

@@ -1,20 +1,26 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { kebabCase } from "lodash";
+// import { kebabCase } from "lodash";
 import { Helmet } from "react-helmet";
 import { graphql, Link } from "gatsby";
+import { getImage } from "gatsby-plugin-image";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowCircleLeft } from '@fortawesome/free-solid-svg-icons'
+
 import Layout from "../components/Layout";
+import FullWidthImage from "../components/FullWidthImage";
 import Content, { HTMLContent } from "../components/Content";
 
 // eslint-disable-next-line
 export const BlogPostTemplate = ({
+  title,
+  description,
+  featuredImage,
+  helmet,
   content,
   contentComponent,
-  description,
-  tags,
-  title,
-  helmet,
 }) => {
+  const postImage = getImage(featuredImage) || featuredImage;
   const PostContent = contentComponent || Content;
 
   return (
@@ -22,24 +28,24 @@ export const BlogPostTemplate = ({
       {helmet || ""}
       <div className="container content">
         <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
-              {title}
-            </h1>
-            <p>{description}</p>
+          <div className="column is-2">
+            <Link className="button is-light" to="/">
+              <FontAwesomeIcon icon={faArrowCircleLeft} size="1x" />
+            </Link>
+          </div>
+          <div className="column is-8">
+            <FullWidthImage img={postImage} imgPosition={"50% center"} />
+
+            <h1 className="title is-size-1 is-uppercase">{title}</h1>
+            <h3 className="mb-6">{description}</h3>
             <PostContent content={content} />
-            {tags && tags.length ? (
-              <div style={{ marginTop: `4rem` }}>
-                <h4>Tags</h4>
-                <ul className="taglist">
-                  {tags.map((tag) => (
-                    <li key={tag + `tag`}>
-                      <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
-                    </li>
-                  ))}
-                </ul>
+
+            <section className="section">
+              <div className="has-text-centered">
+                <Link className="button is-warning is-large is-responsive" to="/donate">Підтримати</Link>
               </div>
-            ) : null}
+            </section>
+
           </div>
         </div>
       </div>
@@ -48,11 +54,12 @@ export const BlogPostTemplate = ({
 };
 
 BlogPostTemplate.propTypes = {
+  title: PropTypes.string,
+  description: PropTypes.string,
+  featuredImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  helmet: PropTypes.object,
   content: PropTypes.node.isRequired,
   contentComponent: PropTypes.func,
-  description: PropTypes.string,
-  title: PropTypes.string,
-  helmet: PropTypes.object,
 };
 
 const BlogPost = ({ data }) => {
@@ -63,7 +70,6 @@ const BlogPost = ({ data }) => {
       <BlogPostTemplate
         content={post.html}
         contentComponent={HTMLContent}
-        description={post.frontmatter.description}
         helmet={
           <Helmet titleTemplate="%s | Blog">
             <title>{`${post.frontmatter.title}`}</title>
@@ -73,8 +79,9 @@ const BlogPost = ({ data }) => {
             />
           </Helmet>
         }
-        tags={post.frontmatter.tags}
         title={post.frontmatter.title}
+        description={post.frontmatter.description}
+        featuredImage={post.frontmatter.featuredImage}
       />
     </Layout>
   );
@@ -82,13 +89,15 @@ const BlogPost = ({ data }) => {
 
 BlogPost.propTypes = {
   data: PropTypes.shape({
-    markdownRemark: PropTypes.object,
+    markdownRemark: PropTypes.shape({
+      // frontmatter: PropTypes.object,
+    }),
   }),
 };
 
 export default BlogPost;
 
-export const pageQuery = graphql`
+export const blogPostQuery = graphql`
   query BlogPostByID($id: String!) {
     markdownRemark(id: { eq: $id }) {
       id
@@ -97,7 +106,11 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         title
         description
-        tags
+        featuredImage {
+          childImageSharp {
+            gatsbyImageData(quality: 100, layout: FULL_WIDTH)
+          }
+        }
       }
     }
   }

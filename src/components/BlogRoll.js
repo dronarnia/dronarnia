@@ -23,7 +23,7 @@ const BlogRollTemplate = (props) => {
                   }}
                 >
                   <Link to={post.fields.slug}>
-                    <PreviewCompatibleImage imageInfo={post.frontmatter.featuredimage} />
+                    <PreviewCompatibleImage imageInfo={post.frontmatter.featuredImage} />
                   </Link>
 
 
@@ -40,17 +40,17 @@ const BlogRollTemplate = (props) => {
               {/*
               <header>
 
-                {post?.frontmatter?.featuredimage && (
+                {post?.frontmatter?.featuredImage && (
                   <div className="featured-thumbnail">
                     <PreviewCompatibleImage
                       imageInfo={{
-                        image: post.frontmatter.featuredimage,
+                        image: post.frontmatter.featuredImage,
                         alt: `featured image thumbnail for post ${post.frontmatter.title}`,
                         width:
-                          post.frontmatter.featuredimage.childImageSharp
+                          post.frontmatter.featuredImage.childImageSharp
                             .gatsbyImageData.width,
                         height:
-                          post.frontmatter.featuredimage.childImageSharp
+                          post.frontmatter.featuredImage.childImageSharp
                             .gatsbyImageData.height,
                       }}
                     />
@@ -118,10 +118,10 @@ export default function BlogRoll() {
                 }
                 frontmatter {
                   title
+                  description
                   templateKey
                   date(formatString: "MMMM DD, YYYY")
-                  featuredpost
-                  featuredimage {
+                  featuredImage {
                     childImageSharp {
                       gatsbyImageData(
                         width: 240

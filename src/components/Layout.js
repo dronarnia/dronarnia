@@ -19,24 +19,24 @@ const TemplateWrapper = ({ children }) => {
         <link
           rel="apple-touch-icon"
           sizes="180x180"
-          href={`${withPrefix("/")}img/dronarnia/favicons/apple-touch-icon.png`}
+          href={`${withPrefix("/")}img/apple-touch-icon.png`}
         />
         <link
           rel="icon"
           type="image/png"
-          href={`${withPrefix("/")}img/dronarnia/favicons/favicon-32x32.png`}
+          href={`${withPrefix("/")}img/favicon-32x32.png`}
           sizes="32x32"
         />
         <link
           rel="icon"
           type="image/png"
-          href={`${withPrefix("/")}img/dronarnia/favicons/favicon-16x16.png`}
+          href={`${withPrefix("/")}img/favicon-16x16.png`}
           sizes="16x16"
         />
 
         <link
           rel="mask-icon"
-          href={`${withPrefix("/")}img/dronarnia/favicons/safari-pinned-tab.png`}
+          href={`${withPrefix("/")}img/safari-pinned-tab.png`}
           color="#ff4400"
         />
         <meta name="theme-color" content="#fff" />
@@ -46,7 +46,7 @@ const TemplateWrapper = ({ children }) => {
         <meta property="og:url" content="/" />
         <meta
           property="og:image"
-          content={`${withPrefix("/")}img/dronarnia/og-image/og-image_1.jpg`}
+          content={`${withPrefix("/")}img/og-image_2.jpg`}
         />
       </Helmet>
       <Navbar />

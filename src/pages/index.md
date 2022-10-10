@@ -1,25 +1,27 @@
 ---
-templateKey: main-page
+templateKey: index-page
 path: /
-image: /img/dronarnia/jumbotrons/photo-1508138221679-760a23a2285b_v2.jpg
+image: /img/about_1.jpg
 heading: ДРОНАРНЯ
 subheading: УКРАЇНСЬКІ ДРОНИ ДЛЯ ФРОНТУ
-aboutImage: /img/dronarnia/jumbotrons/photo_2022-08-06_00-28-41.jpg
+aboutImage: /img/about_2.jpg
 title: ПРО НАС
 intro:
   blurbs:
     - text: Лабораторія електроніки Lampa
-      image: /img/partner-lampa.png
+      image: /img/partner_lampa.png
     - text: FabLab Fabricator
-      image: /img/partner-fablab-fabricator.png
+      image: /img/partner_fablab-fabricator.png
     - text: Dnipro-M
-      image: /img/partner-dnipro-m.png
+      image: /img/partner_dnipro-m.png
     - text: DataRoot Labs
-      image: /img/partner-dataroot-labs.png
+      image: /img/partner_dataroot-labs.png
     - text: Виробник електроніки Evocom  
-      image: /img/partner-evocom.png
+      image: /img/partner_evocom.png
     - text: Системи нагрівання IQOS  
-      image: /img/partner-iqos.png
+      image: /img/partner_iqos.png
+    - text: Інженерна команда інноваторів eTeam
+      image: /img/partner_eteam.png
   heading: ПАРТНЕРИ
 
 ---

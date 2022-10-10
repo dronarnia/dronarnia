@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
-import LayoutUnderconstruction from "../components/LayoutUnderconstruction";
+import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
 
 // eslint-disable-next-line
@@ -38,13 +38,13 @@ const DonatePage = ({ data }) => {
   const { markdownRemark: post } = data;
 
   return (
-    <LayoutUnderconstruction>
+    <Layout>
       <DonatePageTemplate
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
         content={post.html}
       />
-    </LayoutUnderconstruction>
+    </Layout>
   );
 };
 

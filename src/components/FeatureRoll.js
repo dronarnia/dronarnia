@@ -23,7 +23,7 @@ const FeatureRollTemplate = (props) => {
               </div>
               <div className="mb-4">
                 <div className="mb-2 is-size-5 is-uppercase">{post.frontmatter.title}</div>
-                <div className="heading mb-0">{post.frontmatter.subtitle}</div>
+                <div className="heading mb-0">{post.frontmatter.description}</div>
               </div>
               <div class="buttons has-addons is-centered">
                 <a className="button is-warning" href="https://send.monobank.ua/jar/7iVoXMJPBE" target="_blank" rel="noopener noreferrer">Підтримати</a>
@@ -86,10 +86,9 @@ export default function FeatureRoll() {
                 }
                 frontmatter {
                   title
-                  subtitle
+                  description
                   templateKey
                   date(formatString: "MMMM DD, YYYY")
-                  featuredpost
                   featuredImage {
                     childImageSharp {
                       gatsbyImageData(

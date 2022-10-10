@@ -15,7 +15,7 @@ const Navbar = () => {
         <div className="navbar-brand">
           <Link to="/" className="navbar-item" activeClassName="is-active" title="Logo" style={{ paddingTop: "0", paddingBottom: "0" }}>
             <img src={logo} alt="Dronarnia" style={{ height: "120px", width: "auto", marginRight: ".75rem", padding: "0" }} />
-            <span style={{ textTransform: "uppercase" }}>Дронарня</span>
+            <span className="is-uppercase">Дронарня</span>
           </Link>
           {/* Hamburger menu */}
           <button

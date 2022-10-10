@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { kebabCase } from "lodash";
+// import { kebabCase } from "lodash";
 import { Helmet } from "react-helmet";
 import { graphql, Link } from "gatsby";
 import { getImage } from "gatsby-plugin-image";
@@ -14,10 +14,8 @@ import Content, { HTMLContent } from "../components/Content";
 // eslint-disable-next-line
 export const FeaturePostTemplate = ({
   title,
-  subtitle,
   description,
   featuredImage,
-  tags,
   helmet,
   content,
   contentComponent,
@@ -31,35 +29,22 @@ export const FeaturePostTemplate = ({
       <div className="container content">
         <div className="columns">
           <div className="column is-2">
-            <Link className="button is-light" to="/main">
+            <Link className="button is-light" to="/">
               <FontAwesomeIcon icon={faArrowCircleLeft} size="1x" />
             </Link>
           </div>
           <div className="column is-8">
             <FullWidthImage img={postImage} imgPosition={"50% center"} />
 
-            <h1 className="title is-size-1">{title}</h1>
-            <h3 className="mb-6">{subtitle}</h3>
-            <p>{description}</p>
+            <h1 className="title is-size-1 is-uppercase">{title}</h1>
+            <h3 className="mb-6">{description}</h3>
             <PostContent content={content} />
+
             <section className="section">
               <div className="has-text-centered">
                 <Link className="button is-warning is-large is-responsive" to="/donate">Підтримати</Link>
               </div>
             </section>
-
-            {tags && tags.length ? (
-              <div style={{ marginTop: `4rem` }}>
-                <h4>Теги</h4>
-                <ul className="taglist">
-                  {tags.map((tag) => (
-                    <li key={tag + `tag`}>
-                      <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ) : null}
 
           </div>
         </div>
@@ -70,24 +55,21 @@ export const FeaturePostTemplate = ({
 
 FeaturePostTemplate.propTypes = {
   title: PropTypes.string,
-  subtitle: PropTypes.string,
   description: PropTypes.string,
   featuredImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  helmet: PropTypes.object,
   content: PropTypes.node.isRequired,
   contentComponent: PropTypes.func,
-  helmet: PropTypes.object,
 };
 
 const FeaturePost = ({ data }) => {
   const { markdownRemark: post } = data;
-  // const { frontmatter } = data.markdownRemark;
 
   return (
     <Layout>
       <FeaturePostTemplate
         content={post.html}
         contentComponent={HTMLContent}
-        description={post.frontmatter.description}
         helmet={
           <Helmet titleTemplate="%s | Blog">
             <title>{`${post.frontmatter.title}`}</title>
@@ -97,9 +79,8 @@ const FeaturePost = ({ data }) => {
             />
           </Helmet>
         }
-        tags={post.frontmatter.tags}
         title={post.frontmatter.title}
-        subtitle={post.frontmatter.subtitle}
+        description={post.frontmatter.description}
         featuredImage={post.frontmatter.featuredImage}
       />
     </Layout>
@@ -124,9 +105,7 @@ export const featurePostQuery = graphql`
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         title
-        subtitle
         description
-        tags
         featuredImage {
           childImageSharp {
             gatsbyImageData(quality: 100, layout: FULL_WIDTH)

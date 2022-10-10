@@ -4,134 +4,108 @@ import { graphql } from "gatsby";
 import { getImage } from "gatsby-plugin-image";
 
 import Layout from "../components/Layout";
-import Features from "../components/Features";
-// import BlogRoll from "../components/BlogRoll";
 import FeatureRoll from "../components/FeatureRoll";
+// import BlogRoll from "../components/BlogRoll";
+import Partners from "../components/Partners";
 import FullWidthImage from "../components/FullWidthImage";
+import Content, { HTMLContent } from "../components/Content";
 
 // eslint-disable-next-line
 export const IndexPageTemplate = ({
   image,
-  title,
   heading,
   subheading,
-  // mainpitch,
-  description,
+  title,
+  aboutImage,
   intro,
+  content,
+  contentComponent
 }) => {
   const heroImage = getImage(image) || image;
+  const fullImage = getImage(aboutImage) || aboutImage;
+  const PageContent = contentComponent || Content;
 
   return (
     <div>
+
       <FullWidthImage img={heroImage} heading={heading} subheading={subheading} />
+
       <section className="section">
-
-
         <div className="container">
-          <div className="section">
+          <section className="section">
             <div className="columns">
-              <div className="column is-10 is-offset-1">
-                <div className="content">
-                {/*
-                  <div className="content">
-
-                    <nav class="level mb-6">
-                      <div class="level-item has-text-centered">
-                        <div>
-                          <p class="title">3,456</p>
-                          <p class="heading">Tweets</p>
-                        </div>
-                      </div>
-                      <div class="level-item has-text-centered">
-                        <div>
-                          <p class="title">123</p>
-                          <p class="heading">Following</p>
-                        </div>
-                      </div>
-                      <div class="level-item has-text-centered">
-                        <div>
-                          <p class="title">456K</p>
-                          <p class="heading">Followers</p>
-                        </div>
-                      </div>
-                      <div class="level-item has-text-centered">
-                        <div>
-                          <p class="title">789</p>
-                          <p class="heading">Likes</p>
-                        </div>
-                      </div>
-                    </nav>
-
-                  </div>
-                  */}
-
-                  <Features gridItems={intro.blurbs} />
-                  {/*
-                  <div className="columns">
-                    <div className="column is-12 has-text-centered">
-                      <Link className="btn" to="/products">
-                        See all products
-                      </Link>
-                    </div>
-                  </div>
-                  */}
-                  <FeatureRoll />
-                  {/*
-                  <div className="column is-12">
-                    <h3 className="has-text-weight-semibold is-size-2">
-                      Latest stories
-                    </h3>
-                    <BlogRoll />
-                    <div className="column is-12 has-text-centered">
-                      <Link className="btn" to="/blog">
-                        Read more
-                      </Link>
-                    </div>
-                  </div>
-                  */}
-
-                      {/*
-                      <h1 className="title">{mainpitch.title}</h1>
-                      <h3 className="">{mainpitch.description}</h3>
-                      */}
-                      <h1 className="">{title}</h1>
-                      <p>{description}</p>
-
-
-                </div>
+              <div className="column is-12 is-10-fullhd is-offset-1-fullhd">
+                <FeatureRoll />
               </div>
             </div>
-          </div>
+          </section>
         </div>
       </section>
+
+      {/* <section className="section">
+        <div className="container">
+          <section className="section">
+            <div className="columns">
+              <div className="column is-12 is-10-fullhd is-offset-1-fullhd">
+                <BlogRoll />
+              </div>
+            </div>
+          </section>
+        </div>
+      </section> */}
+
+      <FullWidthImage img={fullImage} imgPosition={"50% center"} />
+
+      <section className="section">
+        <div class="container">
+          <section className="section">
+            <div className="columns">
+              <div className="column is-12 is-8-fullhd is-offset-2-fullhd">
+                <h1 className="title is-size-1 is-size-3-touch has-text-centered mb-6">{title}</h1>
+                <PageContent className="content is-size-5 is-size-6-touch" content={content} />
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section className="section" style={{backgroundColor: "#f3f1f1"}}>
+        <h1 className="title is-size-1 is-size-3-touch has-text-centered mb-6">{intro.heading}</h1>
+        <Partners gridItems={intro.blurbs} />
+      </section>
+
     </div>
   );
 };
 
 IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  title: PropTypes.string,
   heading: PropTypes.string,
   subheading: PropTypes.string,
-  // mainpitch: PropTypes.object,
-  description: PropTypes.string,
+  aboutImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  title: PropTypes.string.isRequired,
+  content: PropTypes.string,
+  contentComponent: PropTypes.func,
   intro: PropTypes.shape({
     blurbs: PropTypes.array,
+    heading: PropTypes.string,
   }),
 };
 
 const IndexPage = ({ data }) => {
+  const { markdownRemark: post } = data;
   const { frontmatter } = data.markdownRemark;
 
   return (
     <Layout>
       <IndexPageTemplate
         image={frontmatter.image}
-        title={frontmatter.title}
         heading={frontmatter.heading}
         subheading={frontmatter.subheading}
-        // mainpitch={frontmatter.mainpitch}
-        description={frontmatter.description}
+        title={frontmatter.title}
+        aboutImage={frontmatter.aboutImage}
+        content={post.html}
+        contentComponent={HTMLContent}
         intro={frontmatter.intro}
       />
     </Layout>
@@ -148,11 +122,11 @@ IndexPage.propTypes = {
 
 export default IndexPage;
 
-export const pageQuery = graphql`
+export const mainPageQuery = graphql`
   query IndexPageTemplate {
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
+      html
       frontmatter {
-        title
         image {
           childImageSharp {
             gatsbyImageData(quality: 100, layout: FULL_WIDTH)
@@ -160,18 +134,22 @@ export const pageQuery = graphql`
         }
         heading
         subheading
-        description
+        aboutImage {
+          childImageSharp {
+            gatsbyImageData(quality: 100, layout: FULL_WIDTH)
+          }
+        }
+        title
         intro {
           blurbs {
             image {
               childImageSharp {
-                gatsbyImageData(width: 240, quality: 64, layout: CONSTRAINED)
+                gatsbyImageData(height: 80, quality: 69, layout: CONSTRAINED)
               }
             }
             text
           }
           heading
-          description
         }
       }
     }

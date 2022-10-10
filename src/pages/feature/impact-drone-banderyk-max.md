@@ -1,9 +1,9 @@
 ---
 templateKey: feature-post
 title: Ударний дрон “Banderyk MAX”
-subtitle: Дрон з системою доставки “подаруночків”
+description: Дрон з системою доставки “подаруночків”
 date: 2022-02-23T15:04:10.000Z
-featuredImage: /img/dronarnia/features/photo_2022-10-04-02.09.25_v2.jpg
+featuredImage: /img/product_2_1.jpg
 
 ---
 
@@ -19,10 +19,10 @@ Banderyk MAX - великий агро-октокоптер розрахован
 
 Дрон оснащений системою скидання для різного типу “подаруночків”, та потужним тепловізором для точної роботи вночі.
 
-![Ударний дрон “Banderyk MAX” 1](/img/dronarnia/features/photo_2022-08-11_16-57-48_v2.jpg)
+![Ударний дрон “Banderyk MAX” 1](/img/product_2_2.jpg)
 
 Наші пташки вже показали свою ефективність на фронті та ми продовжуємо нарощювати темпи виробництва.
 
-![Ударний дрон “Banderyk MAX” 2](/img/dronarnia/features/drones.news_.2208316_v2.jpg)
+![Ударний дрон “Banderyk MAX” 2](/img/product_2_3.jpg)
 
 ВІДЕО РОБОТИ (незабаром)

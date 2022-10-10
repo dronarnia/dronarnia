@@ -2,19 +2,15 @@
 templateKey: blog-post
 title: Створення систем скиду
 date: 2017-01-04T15:04:10.000Z
-featuredpost: false
-featuredimage: /img/dronarnia/features/io_air_bomb_technical_engineering_drawing_paper_blueprint_15dba6ce-fcc8-4fcc-8c68-9f505be42f47.jpg
-description: >-
-  We’re proud to announce that we’ll be offering a small batch of Jamaica Blue
-  Mountain coffee beans in our store next week.
+featuredImage: /img/product_3_0.jpg
+description: We’re proud to announce that we’ll be offering a small batch of Jamaica Blue.
 tags:
-  - jamaica
-  - green beans
-  - flavor
-  - tasting
+  - brewing
+  - chemex
+
 ---
 
-![chemex](/img/dronarnia/features/io_air_bomb_technical_engineering_drawing_paper_blueprint_15dba6ce-fcc8-4fcc-8c68-9f505be42f47.jpg)
+<!-- ![chemex](/img/dronarnia/features/io_air_bomb_technical_engineering_drawing_paper_blueprint_15dba6ce-fcc8-4fcc-8c68-9f505be42f47.jpg) -->
 
 We expect the shipment of a limited quantity of green beans next Monday. We’ll be offering the roasted beans from Tuesday, but quantities are limited, so be quick.
 

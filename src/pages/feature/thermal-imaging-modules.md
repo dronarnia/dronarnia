@@ -1,9 +1,9 @@
 ---
 templateKey: feature-post
 title: Тепловізійні модулі
-subtitle: Виготовлення та встановлення тепловізійних модулів для цивільних ти кастомних дронів
+description: Виготовлення та встановлення тепловізійних модулів для цивільних ти кастомних дронів
 date: 2022-02-20T15:04:10.000Z
-featuredImage: /img/dronarnia/features/DJI-Mavic_Autel-2022-10-04-15-38-42owkcx_v2.jpg
+featuredImage: /img/product_4_1.jpg
 
 ---
 
