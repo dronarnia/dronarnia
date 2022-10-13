@@ -24,27 +24,29 @@ collections:
               label: "Template Key",
               name: "templateKey",
               widget: "hidden",
-              default: "main-page",
+              default: "index-page",
             }
-          - { label: Image, name: image, widget: image }
-          - { label: Heading, name: heading, widget: string }
-          - { label: Subheading, name: subheading, widget: string }
-          - { label: aboutImage, name: aboutImage, widget: image }
-          - { label: Title, name: title, widget: string }
+          - { label: Hero Image, name: image, widget: image }
+          - { label: Hero Title, name: heading, widget: string }
+          - { label: Hero Description, name: subheading, widget: string }
+          - { label: About Image, name: aboutImage, widget: image }
+          - { label: About Title, name: title, widget: string }
+          - { label: About Body, name: body, widget: markdown }
           - {
-              label: Intro,
+              label: Partners,
               name: intro,
               widget: object,
               fields:
                 [
                   { label: Heading, name: heading, widget: string },
                   {
-                    label: Blurbs,
+                    label: Items,
                     name: blurbs,
                     widget: list,
                     fields:
                       [
-                        { label: Text, name: text, widget: text },
+                        { label: Title, name: text, widget: string },
+                        { label: Url, name: url, widget: string },
                         { label: Image, name: image, widget: image },
                       ],
                   },
@@ -60,8 +62,9 @@ collections:
               widget: "hidden",
               default: "donate-page",
             }
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Body", name: "body", widget: "markdown" }
+          - { label: Title, name: title, widget: string }
+          - { label: Description, name: description, widget: string }
+          - { label: Body, name: body, widget: markdown }
       - file: "src/pages/faq/index.md"
         label: "Часті запитання"
         name: "faq"
@@ -70,10 +73,11 @@ collections:
               label: "Template Key",
               name: "templateKey",
               widget: "hidden",
-              default: "about-page",
+              default: "faq-page",
             }
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Body", name: "body", widget: "markdown" }
+          - { label: Title, name: title, widget: string }
+          - { label: Description, name: description, widget: string }
+          - { label: Body, name: body, widget: markdown }
   - name: "feature"
     label: "Продукти"
     folder: "src/pages/feature"
@@ -86,8 +90,8 @@ collections:
           widget: "hidden",
           default: "feature-post",
         }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "string" }
-      - { label: "Featured Image", name: "featuredImage", widget: image }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: Publish Date, name: date, widget: datetime }
+      - { label: Featured Image, name: featuredImage, widget: image }
+      - { label: Title, name: title, widget: string }
+      - { label: Description, name: description, widget: string }
+      - { label: Body, name: body, widget: markdown }

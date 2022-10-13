@@ -10,18 +10,22 @@ const FeatureGrid = ({ gridItems }) => (
     justifyContent: "center",
   }}>
     {gridItems.map((item) => (
-      <div key={item.text} style={{
-        maxWidth: "240px",
-        padding: "0px 20px",
-        boxSizing: "border-box",
-      }}>
-        <div className="mb-5">
-          <PreviewCompatibleImage imageInfo={item} />
+      <a className="partner-item" href={item.url} target="_blank" rel="noopener noreferrer" title={item.text}>
+        <div key={item.text} style={{
+          maxWidth: "240px",
+          padding: "0px 20px",
+          boxSizing: "border-box",
+        }}>
+          <div className="mb-5">
+            <PreviewCompatibleImage imageInfo={item} />
+          </div>
+          <div className="mb-5 is-uppercase" style={{
+            fontSize: "14px",
+          }}>
+            {item.text}
+          </div>
         </div>
-        <div className="mb-5 is-uppercase" style={{
-          fontSize: "14px",
-        }}>{item.text}</div>
-      </div>
+      </a>
     ))}
   </div>
 );

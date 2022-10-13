@@ -1,20 +1,18 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { BlogPostTemplate } from '../../templates/blog-post'
+import { FaqPageTemplate } from '../../templates/faq-page'
 
-const BlogPostPreview = ({ entry, widgetFor }) => {
-  const tags = entry.getIn(['data', 'tags'])
+const FaqPagePreview = ({ entry, widgetFor }) => {
   const data = entry.getIn(['data']).toJS()
 
   if (data) {
     return (
-      <BlogPostTemplate
+      <FaqPageTemplate
         title={data.title}
         // title={entry.getIn(['data', 'title'])}
         description={data.description}
         // description={entry.getIn(['data', 'description'])}
         content={widgetFor('body')}
-        tags={tags && tags.toJS()}
       />
     )
   } else {
@@ -22,11 +20,11 @@ const BlogPostPreview = ({ entry, widgetFor }) => {
   }
 }
 
-BlogPostPreview.propTypes = {
+FaqPagePreview.propTypes = {
   entry: PropTypes.shape({
     getIn: PropTypes.func,
   }),
   widgetFor: PropTypes.func,
 }
 
-export default BlogPostPreview
+export default FaqPagePreview

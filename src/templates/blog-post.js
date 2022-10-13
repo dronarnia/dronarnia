@@ -36,7 +36,7 @@ export const BlogPostTemplate = ({
           <div className="column is-8">
             <FullWidthImage img={postImage} imgPosition={"50% center"} />
 
-            <h1 className="title is-size-1 is-uppercase">{title}</h1>
+            <h1 className="title is-size-1 is-size-3-touch has-text-centered is-uppercase mb-6">{title}</h1>
             <h3 className="mb-6">{description}</h3>
             <PostContent content={content} />
 

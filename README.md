@@ -4,7 +4,7 @@ _Web development of Dronarnia site_
 
 ### Deploy status
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/04b9a941-6da3-4514-81df-ea0ba1721599/deploy-status)](https://app.netlify.com/sites/dronarnia/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f3790f89-c5e9-4aeb-9a9f-62a0222b859c/deploy-status)](https://app.netlify.com/sites/dronarnia/deploys)
 
 ### Run
 

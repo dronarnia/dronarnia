@@ -2,27 +2,37 @@
 templateKey: index-page
 path: /
 image: /img/about_1.jpg
-heading: ДРОНАРНЯ
-subheading: УКРАЇНСЬКІ ДРОНИ ДЛЯ ФРОНТУ
+heading: Дронарня
+subheading: Українські дрони для фронту
 aboutImage: /img/about_2.jpg
-title: ПРО НАС
 intro:
   blurbs:
-    - text: Лабораторія електроніки Lampa
-      image: /img/partner_lampa.png
-    - text: FabLab Fabricator
-      image: /img/partner_fablab-fabricator.png
-    - text: Dnipro-M
-      image: /img/partner_dnipro-m.png
-    - text: DataRoot Labs
-      image: /img/partner_dataroot-labs.png
-    - text: Виробник електроніки Evocom  
-      image: /img/partner_evocom.png
+    - text: Онлайн-ритейлер Rozetka
+      url: https://rozetka.com.ua/ua
+      image: /img/partner_rozetka.png
     - text: Системи нагрівання IQOS  
+      url: https://www.iqos.com.ua/uk
       image: /img/partner_iqos.png
     - text: Інженерна команда інноваторів eTeam
+      url: https://www.eteam.io
       image: /img/partner_eteam.png
-  heading: ПАРТНЕРИ
+    - text: Лабораторія електроніки Lampa
+      url: https://lampa.kpi.ua
+      image: /img/partner_lampa.png
+    - text: FabLab Fabricator
+      url: https://fabricator.me
+      image: /img/partner_fablab-fabricator.png
+    - text: Dnipro-M
+      url: https://dnipro-m.ua
+      image: /img/partner_dnipro-m.png
+    - text: DataRoot Labs
+      url: https://datarootlabs.com
+      image: /img/partner_dataroot-labs.png
+    - text: Виробник електроніки Evocom  
+      url: https://evo.net.ua
+      image: /img/partner_evocom.png
+  heading: Партнери
+title: Про нас
 
 ---
 

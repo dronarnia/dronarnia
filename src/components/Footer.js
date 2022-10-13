@@ -88,20 +88,22 @@ return (
         </div>
       </div> */}
 
-      <div className="content has-text-centered">
-        <p>
-          <img
-            src={mainlogo}
-            alt="Дронарня"
-            style={{ width: "40px" }}
-          />
-        </p>
-        <p>
-          <small>
-            ДРОНАРНЯ | DRONARNIA<br/>
-            2022 © Смерть ворогам! <FontAwesomeIcon icon={faSkullCrossbones} size="1x" />
-        </small>
-        </p>
+      <div className="pt-6 pb-6">
+        <div className="content has-text-centered">
+          <p>
+            <img
+              src={mainlogo}
+              alt="Дронарня"
+              style={{ width: "40px" }}
+            />
+          </p>
+          <p>
+            <small>
+              ДРОНАРНЯ | DRONARNIA<br/>
+              2022 © Смерть ворогам! <FontAwesomeIcon icon={faSkullCrossbones} size="1x" />
+          </small>
+          </p>
+        </div>
       </div>
     </footer>
   );

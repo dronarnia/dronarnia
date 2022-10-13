@@ -1,7 +1,8 @@
 ---
-templateKey: about-page
+templateKey: faq-page
 path: /faq
-title: ЧАСТІ ЗАПИДАННЯ
+title: Часті запидання
+description: Часті запидання до Дронарні
 ---
 
 Кому допомагає Дронарка?

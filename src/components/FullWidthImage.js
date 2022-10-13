@@ -88,7 +88,7 @@ export default function FullWidthImage(props) {
 
             {heading && (
               <div
-                className="title is-size-1 is-size-3-touch has-text-centered"
+                className="title is-size-1 is-size-3-touch has-text-centered is-uppercase"
                 style={{
                   boxShadow: "rgba(0, 0, 0, .5) 0.5rem 0px 0px, rgba(0, 0, 0, .5) -0.5rem 0px 0px",
                   backgroundColor: "rgba(0, 0, 0, .5)",
@@ -104,7 +104,7 @@ export default function FullWidthImage(props) {
 
             {subheading && (
               <div
-                className="subtitle is-size-3 is-size-5-touch has-text-centered"
+                className="subtitle is-size-3 is-size-5-touch has-text-centered is-uppercase"
                 style={{
                   boxShadow: "rgba(0, 0, 0, .5) 0.5rem 0px 0px, rgba(0, 0, 0, .5) -0.5rem 0px 0px",
                   backgroundColor: "rgba(0, 0, 0, .5)",

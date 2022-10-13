@@ -5,7 +5,7 @@ import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
 
 // eslint-disable-next-line
-export const DonatePageTemplate = ({
+export const FaqPageTemplate = ({
   title,
   content,
   contentComponent
@@ -28,19 +28,19 @@ export const DonatePageTemplate = ({
   );
 };
 
-DonatePageTemplate.propTypes = {
+FaqPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
 };
 
-const DonatePage = ({ data }) => {
+const FaqPage = ({ data }) => {
   const { markdownRemark: post } = data;
   // const { frontmatter } = data.markdownRemark;
 
   return (
     <Layout>
-      <DonatePageTemplate
+      <FaqPageTemplate
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
         content={post.html}
@@ -49,11 +49,11 @@ const DonatePage = ({ data }) => {
   );
 };
 
-// DonatePage.propTypes = {
+// FaqPage.propTypes = {
 //   data: PropTypes.object.isRequired,
 // };
 
-DonatePage.propTypes = {
+FaqPage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
       // frontmatter: PropTypes.object,
@@ -61,11 +61,11 @@ DonatePage.propTypes = {
   }),
 };
 
-export default DonatePage;
+export default FaqPage;
 
-export const donatePageQuery = graphql`
-  query DonatePageTemplat {
-    markdownRemark(frontmatter: { templateKey: { eq: "donate-page" } }) {
+export const faqPageQuery = graphql`
+  query FaqPageTemplat {
+    markdownRemark(frontmatter: { templateKey: { eq: "faq-page" } }) {
       html
       frontmatter {
         title

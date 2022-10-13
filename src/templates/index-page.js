@@ -31,14 +31,14 @@ export const IndexPageTemplate = ({
       <FullWidthImage img={heroImage} heading={heading} subheading={subheading} />
 
       <section className="section">
-        <div className="container">
-          <section className="section">
-            <div className="columns">
-              <div className="column is-12 is-10-fullhd is-offset-1-fullhd">
-                <FeatureRoll />
+        <div className="pt-6 pb-6">
+          <div className="container">
+              <div className="columns">
+                <div className="column is-12 is-10-fullhd is-offset-1-fullhd">
+                  <FeatureRoll />
+                </div>
               </div>
-            </div>
-          </section>
+          </div>
         </div>
       </section>
 
@@ -57,21 +57,23 @@ export const IndexPageTemplate = ({
       <FullWidthImage img={fullImage} imgPosition={"50% center"} />
 
       <section className="section">
-        <div class="container">
-          <section className="section">
+        <div className="pt-6 pb-6">
+          <div class="container">
             <div className="columns">
               <div className="column is-12 is-8-fullhd is-offset-2-fullhd">
-                <h1 className="title is-size-1 is-size-3-touch has-text-centered mb-6">{title}</h1>
+                <h1 className="title is-size-1 is-size-3-touch has-text-centered is-uppercase mb-6">{title}</h1>
                 <PageContent className="content is-size-5 is-size-6-touch" content={content} />
               </div>
             </div>
-          </section>
+          </div>
         </div>
       </section>
 
       <section className="section" style={{backgroundColor: "#f3f1f1"}}>
-        <h1 className="title is-size-1 is-size-3-touch has-text-centered mb-6">{intro.heading}</h1>
-        <Partners gridItems={intro.blurbs} />
+        <div className="pt-6 pb-6">
+          <h1 className="title is-size-1 is-size-3-touch has-text-centered is-uppercase mb-6">{intro.heading}</h1>
+          <Partners gridItems={intro.blurbs} />
+        </div>
       </section>
 
     </div>
@@ -102,8 +104,8 @@ const IndexPage = ({ data }) => {
         image={frontmatter.image}
         heading={frontmatter.heading}
         subheading={frontmatter.subheading}
-        title={frontmatter.title}
         aboutImage={frontmatter.aboutImage}
+        title={frontmatter.title}
         content={post.html}
         contentComponent={HTMLContent}
         intro={frontmatter.intro}
@@ -122,7 +124,7 @@ IndexPage.propTypes = {
 
 export default IndexPage;
 
-export const mainPageQuery = graphql`
+export const indexPageQuery = graphql`
   query IndexPageTemplate {
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       html
@@ -144,7 +146,7 @@ export const mainPageQuery = graphql`
           blurbs {
             image {
               childImageSharp {
-                gatsbyImageData(height: 80, quality: 69, layout: CONSTRAINED)
+                gatsbyImageData(height: 80, quality: 100, layout: CONSTRAINED)
               }
             }
             text

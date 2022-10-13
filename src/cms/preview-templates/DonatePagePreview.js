@@ -1,19 +1,30 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { AboutPageTemplate } from '../../templates/about-page'
+import { DonatePageTemplate } from '../../templates/donate-page'
 
-const AboutPagePreview = ({ entry, widgetFor }) => (
-  <AboutPageTemplate
-    title={entry.getIn(['data', 'title'])}
-    content={widgetFor('body')}
-  />
-)
+const DonatePagePreview = ({ entry, widgetFor }) => {
+  const data = entry.getIn(['data']).toJS()
 
-AboutPagePreview.propTypes = {
+  if (data) {
+    return (
+      <DonatePageTemplate
+        title={data.title}
+        // title={entry.getIn(['data', 'title'])}
+        description={data.description}
+        // description={entry.getIn(['data', 'description'])}
+        content={widgetFor('body')}
+      />
+    )
+  } else {
+    return <div>Loading...</div>
+  }
+}
+
+DonatePagePreview.propTypes = {
   entry: PropTypes.shape({
     getIn: PropTypes.func,
   }),
   widgetFor: PropTypes.func,
 }
 
-export default AboutPagePreview
+export default DonatePagePreview
