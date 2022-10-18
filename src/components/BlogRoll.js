@@ -29,7 +29,7 @@ const BlogRollTemplate = (props) => {
 
                 </div>
                 {/*
-                <p class="title is-6">{post.frontmatter.title}</p>
+                <p className="title is-6">{post.frontmatter.title}</p>
                 */}
 
                 <Link to={post.fields.slug}>

@@ -34,8 +34,8 @@ const Navbar = () => {
             {/* <Link className="navbar-item" activeClassName="is-active" to="/faq">Часті Запитання</Link>
             <Link className="navbar-item" activeClassName="is-active" to="/blog">Хроніки</Link>
             <Link className="navbar-item" activeClassName="is-active" to="/products">Ветеранка</Link> */}
-            <div class="navbar-item">
-              <div class="buttons has-addons is-centered">
+            <div className="navbar-item">
+              <div className="buttons has-addons is-centered">
                 <Link className="button is-warning" to="/donate">Підтримати</Link>
                 <a className="button is-info is-light" href="https://airtable.com/shrjr9gavatDWRilm" target="_blank" rel="noopener noreferrer">Подати заявку</a>
               </div>

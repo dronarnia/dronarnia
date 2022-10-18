@@ -58,7 +58,7 @@ export const IndexPageTemplate = ({
 
       <section className="section">
         <div className="pt-6 pb-6">
-          <div class="container">
+          <div className="container">
             <div className="columns">
               <div className="column is-12 is-8-fullhd is-offset-2-fullhd">
                 <h1 className="title is-size-1 is-size-3-touch has-text-centered is-uppercase mb-6">{title}</h1>

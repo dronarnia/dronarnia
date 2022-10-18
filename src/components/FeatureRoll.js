@@ -25,7 +25,7 @@ const FeatureRollTemplate = (props) => {
                 <div className="mb-2 is-size-5 is-uppercase">{post.frontmatter.title}</div>
                 <div className="heading mb-0">{post.frontmatter.description}</div>
               </div>
-              <div class="buttons has-addons is-centered">
+              <div className="buttons has-addons is-centered">
                 <a className="button is-warning" href="https://send.monobank.ua/jar/7iVoXMJPBE" target="_blank" rel="noopener noreferrer">Підтримати</a>
                 <Link className="button is-info is-light" to={post.fields.slug}>Переглянути</Link>
               </div>
