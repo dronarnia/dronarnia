@@ -48,20 +48,6 @@ IBAN Code (Фунт стерлінгів) UA493052990000026001025018789
 
 ## PAYPAL
 
-email: sozvezdyeseldereya@gmail.com
+email: maximsheremet2012@gmail.com
 
-name: Kateryna Pryimak
-
-## CRYPTOCURRENCY
-
-ВТС: <small>3QY5qzb9ZV6kAXZoRx8MiydDpdYXe5M9Nh</small>
-
-ETH: <small>0x09D25f3563b796429479B28c1E6FE00F967168eD</small>
-
-USDT: <small>TDERHMxwWYwpbDBqcNfNUmTkn3FGZnvEQC</small>
-
-DOGE: <small>DKg68hnn44Vbss2DBv1ahynoZyrNB4Kbps</small>
-
-DASH: <small>XqBVF2VGkoQU6e37NVZWRHqcBaLJcCaw98</small>
-
-KUN: <small>3PCqbRbyqC6zDpQD1U1jfedHUdX93EGyjbT</small>
+name: Maxim Sheremet
