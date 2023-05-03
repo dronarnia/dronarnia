@@ -2,14 +2,11 @@
 templateKey: feature-post
 date: 2022-02-20T15:04:10.000Z
 featuredImage: /img/img_6760.png
-title: Тепловізійні модулі
+title: Тепловізійні модулі для DJI Mavic / Autel
 description: Виготовлення та встановлення тепловізійних модулів для цивільних ти
   кастомних дронів
 ---
-
-<a href="https://drive.google.com/file/d/17owV5X2m-bbN1YJDCUoFiRgaohoCgLGV/view?usp=sharing" target="_blank" rel="noopener noreferrer">drive.google.com/file/d/17owV5X2m-bbN1YJDCUoFiRgaohoCgLGV/view?usp=sharing</a>
-
-## Тепловізійний модуль для DJI Mavic/Autel
+Посилання на презентацію: <a href="https://drive.google.com/file/d/17owV5X2m-bbN1YJDCUoFiRgaohoCgLGV/view?usp=sharing" target="_blank" rel="noopener noreferrer">drive.google.com/file/d/17owV5X2m-bbN1YJDCUoFiRgaohoCgLGV/view?usp=sharing</a>
 
 Тепловізійний модуль для
 DJI Mavic/Autel - на базі
@@ -19,7 +16,7 @@ DJI Mavic/Autel - на базі
 рослинністю - до 100м) з
 фіксованим одновісним підвісом.
 
-## Тепловізійний модуль для DJI Mavic/Autel
+![](/img/6743.png)
 
 Модуль комплектується наземною
 станцією куди виводиться картинка
@@ -36,7 +33,7 @@ DJI Mavic/Autel - на базі
 характеристиками приблизно
 2600$.
 
-## Тепловізійний модуль для DJI Mavic/Autel
+![](/img/6736.png)
 
 Одновісний підвіс має кути огляду від
 -90° до + 35°.
@@ -52,8 +49,7 @@ powerbank.
 
 <a href="https://drive.google.com/file/d/1jLZjNpt7yTjgWN3-nKZxBuBfCRE92ahx/view" target="_blank" rel="noopener noreferrer">ВІДЕО РОБОТИ тепловізійного модуля</a>
 
-
-## Тепловізійний модуль для DJI Mavic/Autel
+![](/img/img_6766.png)
 
 Якщо ви отримали це посилання
 не від менеджера лабораторії -
