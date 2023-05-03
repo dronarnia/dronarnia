@@ -1,10 +1,10 @@
 ---
 templateKey: feature-post
-title: Тепловізійні модулі
-description: Виготовлення та встановлення тепловізійних модулів для цивільних ти кастомних дронів
 date: 2022-02-20T15:04:10.000Z
-featuredImage: /img/product_4_1.jpg
-
+featuredImage: /img/img_6760.png
+title: Тепловізійні модулі
+description: Виготовлення та встановлення тепловізійних модулів для цивільних ти
+  кастомних дронів
 ---
 
 <a href="https://drive.google.com/file/d/17owV5X2m-bbN1YJDCUoFiRgaohoCgLGV/view?usp=sharing" target="_blank" rel="noopener noreferrer">drive.google.com/file/d/17owV5X2m-bbN1YJDCUoFiRgaohoCgLGV/view?usp=sharing</a>
