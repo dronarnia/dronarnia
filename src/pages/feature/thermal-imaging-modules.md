@@ -6,7 +6,7 @@ title: Тепловізійні модулі для DJI Mavic / Autel
 description: Виготовлення та встановлення тепловізійних модулів для цивільних ти
   кастомних дронів
 ---
- <a href="https://drive.google.com/file/d/17owV5X2m-bbN1YJDCUoFiRgaohoCgLGV/view?usp=sharing" target="_blank" rel="noopener noreferrer">Т﻿ТХ та вартість комплекту.</a>
+ <a href="https://drive.google.com/file/d/1tCYr0b9FZUmlbuvkzMd-4oHIH1c5NAq7/view?usp=share_link" rel="noopener noreferrer">Т﻿ТХ та вартість комплекту.</a>
 
 Тепловізійний модуль для
 DJI Mavic/Autel - на базі
