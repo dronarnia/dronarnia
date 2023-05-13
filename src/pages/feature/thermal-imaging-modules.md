@@ -1,7 +1,7 @@
 ---
 templateKey: feature-post
 date: 2022-02-20T15:04:10.000Z
-featuredImage: /img/img_6760.png
+featuredImage: /img/тепловізор_монтажна-область-1.png
 title: Тепловізійні модулі для DJI Mavic / Autel
 description: Виготовлення та встановлення тепловізійних модулів для цивільних ти
   кастомних дронів
