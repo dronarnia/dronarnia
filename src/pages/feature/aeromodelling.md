@@ -1,7 +1,7 @@
 ---
 templateKey: feature-post
 date: 2022-02-21T15:04:10.000Z
-featuredImage: /img/photo_5307687775597873381_y.jpg
+featuredImage: /img/авіа_монтажна-область-1.png
 title: Авіа моделювання
 description: Виготовлення літаків та крил-скаутів
 ---
