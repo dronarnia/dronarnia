@@ -1,7 +1,7 @@
 ---
 templateKey: feature-post
 date: 2022-02-24T15:04:10.000Z
-featuredImage: /img/img_5597.jpg
+featuredImage: /img/бендерик_монтажна-область-1.png
 title: Дрон-розвідник “Бендерик”
 description: FPV дрон-розвідник з тепловізором
 ---
