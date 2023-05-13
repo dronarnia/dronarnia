@@ -5,6 +5,8 @@ featuredImage: /img/0071.png
 title: Ударний дрон “Великий Бендерик”
 description: Дрон з системою доставки “подаруночків”
 ---
+<a href="https://drive.google.com/file/d/1-n0IA-BiaZohs5bJJNFoj9Fx7BjuscHt/view">Т﻿ТХ та вартість комплекту.</a>
+
 | Характеристики       |               |
 | -------------------- | ------------- |
 | Дальність            | 8 км          |
