@@ -5,6 +5,8 @@ featuredImage: /img/img_5597.jpg
 title: Дрон-розвідник “Бендерик”
 description: FPV дрон-розвідник з тепловізором
 ---
+<a href="https://drive.google.com/file/d/1tCYr0b9FZUmlbuvkzMd-4oHIH1c5NAq7/view  ">ТТХ та вартість комплекту.</a>
+
 | Характеристики |            |
 | -------------- | ---------- |
 | Дальність      | 8 км       |
