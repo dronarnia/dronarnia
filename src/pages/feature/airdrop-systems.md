@@ -1,7 +1,7 @@
 ---
 templateKey: feature-post
 date: 2022-02-22T15:04:10.000Z
-featuredImage: /img/1-2.png
+featuredImage: /img/системи-скидання_монтажна-область-1.png
 title: Системи скидання
 description: Виготовлення скидів для всіх типів цивільних дронів
 ---
