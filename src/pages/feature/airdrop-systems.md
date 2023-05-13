@@ -5,6 +5,8 @@ featuredImage: /img/1-2.png
 title: Системи скидання
 description: Виготовлення скидів для всіх типів цивільних дронів
 ---
+<a href="https://drive.google.com/file/d/14N3FT0-ic0ZL80914WyDaAjrlMRHcfAp/view?usp=share_link ">ТТХ та вартість комплекту.</a>
+
 | Бренди  |
 | ------- |
 | Dji     |
