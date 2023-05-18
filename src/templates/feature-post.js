@@ -43,7 +43,7 @@ export const FeaturePostTemplate = ({
             <section className="section">
               <div className="has-text-centered">
                 <Link className="button is-warning is-large is-responsive" to="/donate">Підтримати</Link>
-<a className="button is-warning is-large is-responsive" href="https://airtable.com/shrjr9gavatDWRilm">Замовити</a>
+                <a className="button is-warning is-large is-responsive" href="https://airtable.com/shrjr9gavatDWRilm" target="_blank" rel="noopener noreferrer" >Замовити</a>
               </div>
             </section>
 
