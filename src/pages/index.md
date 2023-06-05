@@ -32,6 +32,15 @@ intro:
     - text: Виробник електроніки Evocom
       url: https://evo.net.ua
       image: /img/partner_evocom.png
+    - image: /img/zgraya-logo_hor.png
+      text: ЗГРАЯ
+      url: https://zgraya-help.com/
+    - image: /img/photo_2022-06-07_18-34-43.jpg
+      text: ЖІНОЧИЙ ВЕТЕРАНСЬКИЙ РУХ
+      url: https://www.uwvm.org.ua/
+    - image: /img/watermark.png
+      text: FLYMOD
+      url: https://flymod.net/
   heading: Партнери
 ---
 
