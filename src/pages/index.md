@@ -35,7 +35,7 @@ intro:
     - image: /img/zgraya-logo_hor.png
       text: ВОЛОНТЕРСЬКИЙ ШТАБ ЗГРАЯ
       url: https://zgraya-help.com/
-    - image: /img/photo_2022-06-07_18-34-43.jpg
+    - image: /img/візитка-дронарня.png
       text: ЖІНОЧИЙ ВЕТЕРАНСЬКИЙ РУХ
       url: https://www.uwvm.org.ua/
     - image: /img/watermark.png
