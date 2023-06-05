@@ -33,7 +33,7 @@ intro:
       url: https://evo.net.ua
       image: /img/partner_evocom.png
     - image: /img/zgraya-logo_hor.png
-      text: ЗГРАЯ
+      text: ВОЛОНТЕРСЬКИЙ ШТАБ ЗГРАЯ
       url: https://zgraya-help.com/
     - image: /img/photo_2022-06-07_18-34-43.jpg
       text: ЖІНОЧИЙ ВЕТЕРАНСЬКИЙ РУХ
