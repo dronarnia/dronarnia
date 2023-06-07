@@ -41,6 +41,9 @@ intro:
     - image: /img/watermark.png
       text: FLYMOD
       url: https://flymod.net/
+    - text: USON™
+      image: /img/без-назви-1.png
+      url: https://uson.com.ua/
   heading: Партнери
 ---
 
