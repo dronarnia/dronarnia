@@ -45,8 +45,3 @@ powerbank.
 <a href="https://drive.google.com/file/d/1jLZjNpt7yTjgWN3-nKZxBuBfCRE92ahx/view" target="_blank" rel="noopener noreferrer">ВІДЕО РОБОТИ тепловізійного модуля</a>
 
 ![](/img/img_6766.png)
-
-Якщо ви отримали це посилання
-не від менеджера лабораторії -
-заповніть будь-ласка форму
-заявки
