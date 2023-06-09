@@ -30,7 +30,7 @@ description: Ми постійно потребуємо матеріальної
 
 ## SWIFT
 
-Назва підприємства/company Name: Громадська організація “Жіночий ветеранський рух”
+###### Назва підприємства/company Name: Громадська організація “Жіночий ветеранський рух” **з приміткою "FOR DRONES"**
 
 Назва банку/Name of the bank: JSC CB “PRIVATBANK”, 1D HRUSHEVSKOHO STR., KYIV, 01001, UKRAINE
 
