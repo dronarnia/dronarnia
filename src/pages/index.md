@@ -44,6 +44,9 @@ intro:
     - text: USON™
       image: /img/без-назви-1.png
       url: https://uson.com.ua/
+    - url: https://houseofukraine.org/
+      text: House of Ukraine
+      image: /img/house-of-ukraine-logo-new_1k-optimized.webp
   heading: Партнери
 ---
 
