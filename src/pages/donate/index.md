@@ -22,15 +22,23 @@ description: Ми постійно потребуємо матеріальної
 
 ## SWIFT
 
-###### Назва підприємства/company Name: Громадська організація “Дронарня" 
+###### Назва підприємства/company Name: Громадська організація “Дронарня"
 
-Назва банку/Name of the bank: 
+Назва банку/Name of the bank: JSC UNIVERSAL BANK,  KYIV,UKRAINE
 
-SWIFT code банку/Bank SWIFT Code PBANUA2X
+SWIFT code банку/Bank SWIFT Code **UNJSUAUKXXX**
 
-IBAN Code (Євро) UA153220010000026002510001019
+IBAN Code (USD) UA943220010000026003510001018
 
-IBAN Code (Долар США) UA943220010000026003510001018
+
+
+Назва банку/Name of the bank: JSC UNIVERSAL BANK,  KYIV,UKRAINE
+
+SWIFT code банку/Bank SWIFT Code **BKTRUS33XXX**
+
+IBAN Code (EUR) UA943220010000026003510001018
+
+
 
 ## PAYPAL
 
