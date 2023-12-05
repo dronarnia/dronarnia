@@ -24,21 +24,40 @@ description: Ми постійно потребуємо матеріальної
 
 ###### Назва підприємства/company Name: Громадська організація “Дронарня"
 
-Назва банку/Name of the bank: JSC UNIVERSAL BANK,  KYIV,UKRAINE
+Account with Institution/
+Банк Бенефіціара:
 
-SWIFT code банку/Bank SWIFT Code **UNJSUAUKXXX**
+JSC UNIVERSAL BANK, 
+KYIV,UKRAINE
+SWIFT: UNJSUAUKXXX
 
-IBAN Code (USD) UA943220010000026003510001018
+Intermediary / Банк посередник:
 
+DEUTSCHE BANK TRUST CO. AMERICAS, 
+NEW YORK, USA
+Account number: 04452477
+SWIFT:   BKTRUS33XXX 
 
+IBAN Code (USD) UA943220010000026003510001018 
 
-Назва банку/Name of the bank: JSC UNIVERSAL BANK,  KYIV,UKRAINE
+Details of payment / Призначення платежу : "DRONARNIA"
 
-SWIFT code банку/Bank SWIFT Code **BKTRUS33XXX**
+Account with Institution/
+Банк Бенефіціара:
 
-IBAN Code (EUR) UA943220010000026003510001018
+JSC UNIVERSAL BANK, 
+KYIV,UKRAINE
+SWIFT: UNJSUAUKXXX
 
+Intermediary / Банк посередник:
 
+DEUTSCHE BANK AG, 
+FRANKFURT, GERMANY
+SWIFT:   DEUTDEFFXXX 
+
+ IBAN Code (EUR) UA153220010000026002510001019 
+
+Details of payment / Призначення платежу : "DRONARNIA"
 
 ## PAYPAL
 
