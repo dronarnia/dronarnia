@@ -47,7 +47,7 @@ intro:
     - url: https://houseofukraine.org/
       text: House of Ukraine
       image: /img/house-of-ukraine-logo-new_1k-optimized.webp
-    - text: FAVBET TECH
+    - text: Українська ІТ-компанія
       image: /img/logo_tech_2_2.png
       url: https://www.facebook.com/favbettech/
   heading: Партнери
