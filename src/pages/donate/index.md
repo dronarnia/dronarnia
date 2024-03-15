@@ -68,3 +68,7 @@ Details of payment / Призначення платежу : "DRONARNIA"
 email: maximsheremet2012@gmail.com
 
 name: Maxim Sheremet
+
+## ПРИВАТ БАНК
+
+Номер карти 5457082257758362
