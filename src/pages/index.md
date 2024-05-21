@@ -26,9 +26,6 @@ intro:
     - text: Dnipro-M
       url: https://dnipro-m.ua
       image: /img/partner_dnipro-m.png
-    - text: DataRoot Labs
-      url: https://datarootlabs.com
-      image: /img/partner_dataroot-labs.png
     - text: Виробник електроніки Evocom
       url: https://evo.net.ua
       image: /img/partner_evocom.png
