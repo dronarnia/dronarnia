@@ -1,7 +1,7 @@
 ---
 templateKey: feature-post
 date: 2023-05-03T14:42:47.567Z
-featuredImage: /img/великий-бендерик_монтажна-область-1.png
+featuredImage: /img/remove-bg.ai_1721632307382.png
 title: Ударний дрон “Великий Бандерик”
 description: Дрон з системою доставки “подаруночків”
 ---
