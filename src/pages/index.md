@@ -44,6 +44,9 @@ intro:
     - url: https://houseofukraine.org/
       text: House of Ukraine
       image: /img/house-of-ukraine-logo-new_1k-optimized.webp
+    - text: Українська ІТ-компанія
+      image: https://dronarnia.com.ua/static/b21d7c260913196d95653f86ea4497ec/82157/logo_tech_2_2.webp
+      url: https://dronarnia.com.ua/
   heading: Партнери
 ---
 
