@@ -45,7 +45,7 @@ intro:
       text: House of Ukraine
       image: /img/house-of-ukraine-logo-new_1k-optimized.webp
     - text: Українська ІТ-компанія
-      image: https://dronarnia.com.ua/static/b21d7c260913196d95653f86ea4497ec/82157/logo_tech_2_2.webp
+      image: /img/logo_tech_2_2.png
       url: https://dronarnia.com.ua/
     - image: /img/logo_fundation_2024-07.svg.png
       url: https://slotscity.foundation/
