@@ -47,6 +47,9 @@ intro:
     - text: Українська ІТ-компанія
       image: https://dronarnia.com.ua/static/b21d7c260913196d95653f86ea4497ec/82157/logo_tech_2_2.webp
       url: https://dronarnia.com.ua/
+    - image: /img/logo_fundation_2024-07.svg
+      url: https://slotscity.foundation/
+      text: Благодійний фонд
   heading: Партнери
 ---
 
