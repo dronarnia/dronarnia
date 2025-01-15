@@ -44,9 +44,6 @@ intro:
     - url: https://houseofukraine.org/
       text: House of Ukraine
       image: /img/house-of-ukraine-logo-new_1k-optimized.webp
-    - text: Українська ІТ-компанія
-      image: /img/logo_tech_2_2.png
-      url: https://dronarnia.com.ua/
     - image: /img/logo_fundation_2024-07.svg.png
       url: https://slotscity.foundation/
       text: Благодійний фонд
