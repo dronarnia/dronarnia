@@ -10,7 +10,12 @@ const FeatureGrid = ({ gridItems }) => (
     justifyContent: "center",
   }}>
     {gridItems.map((item) => (
-      <a className="partner-item" key={item.text} href={item.url} target="_blank" rel="noopener noreferrer" title={item.text}>
+      <a className="partner-item"
+        key={item.text} href={item.url}
+        target="_blank" rel="noopener noreferrer"
+        title={item.text}
+        aria-label={item.text}
+      >
         <div style={{
           maxWidth: "240px",
           padding: "0px 20px",

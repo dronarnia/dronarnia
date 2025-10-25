@@ -18,7 +18,10 @@ const FeatureRollTemplate = (props) => {
             <div>
               <div className="mb-3">
                 <Link to={post.fields.slug}>
-                  <PreviewCompatibleImage imageInfo={post.frontmatter.featuredImage} />
+                  <PreviewCompatibleImage
+                    imageInfo={post.frontmatter.featuredImage}
+                    imageUrl={post.frontmatter.featuredImageUrl}
+                  />
                 </Link>
               </div>
               <div className="mb-4">
@@ -74,7 +77,7 @@ export default function FeatureRoll() {
       query={graphql`
         query FeatureRollQuery {
           allMarkdownRemark(
-            sort: { order: DESC, fields: [frontmatter___date] }
+            sort: {frontmatter: {date: DESC}}
             filter: { frontmatter: { templateKey: { eq: "feature-post" } } }
           ) {
             edges {
@@ -96,9 +99,9 @@ export default function FeatureRoll() {
                         quality: 100
                         layout: CONSTRAINED
                       )
-
                     }
                   }
+                  featuredImageUrl
                 }
               }
             }

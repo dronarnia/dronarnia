@@ -20,7 +20,26 @@ export const FeaturePostTemplate = ({
   content,
   contentComponent,
 }) => {
-  const postImage = getImage(featuredImage) || featuredImage;
+  // Визначаємо тип зображення:
+  // 1. Якщо це рядок (string) - це зовнішній URL
+  // 2. Якщо це об'єкт з childImageSharp - це локальне зображення для gatsby-plugin-image
+  // 3. Якщо це об'єкт з publicURL - це локальний файл без обробки
+  let postImage;
+
+  if (typeof featuredImage === 'string') {
+    // Зовнішній URL
+    postImage = featuredImage;
+  } else if (featuredImage?.childImageSharp) {
+    // Локальне зображення для gatsby-plugin-image
+    postImage = getImage(featuredImage);
+  } else if (featuredImage?.publicURL) {
+    // Локальний файл (publicURL)
+    postImage = featuredImage.publicURL;
+  } else {
+    // Fallback
+    postImage = featuredImage;
+  }
+
   const PostContent = contentComponent || Content;
 
   return (
@@ -31,6 +50,7 @@ export const FeaturePostTemplate = ({
           <div className="column is-2">
             <Link className="button is-light" to="/">
               <FontAwesomeIcon icon={faArrowCircleLeft} size="1x" />
+              {/* <span>Back</span> */}
             </Link>
           </div>
           <div className="column is-8">
@@ -67,6 +87,9 @@ FeaturePostTemplate.propTypes = {
 const FeaturePost = ({ data }) => {
   const { markdownRemark: post } = data;
 
+  // Використовуємо featuredImageUrl якщо є, інакше featuredImage
+  const featuredImage = post.frontmatter.featuredImageUrl || post.frontmatter.featuredImage;
+
   return (
     <Layout>
       <FeaturePostTemplate
@@ -83,7 +106,7 @@ const FeaturePost = ({ data }) => {
         }
         title={post.frontmatter.title}
         description={post.frontmatter.description}
-        featuredImage={post.frontmatter.featuredImage}
+        featuredImage={featuredImage}
       />
     </Layout>
   );
@@ -112,7 +135,9 @@ export const featurePostQuery = graphql`
           childImageSharp {
             gatsbyImageData(quality: 100, layout: FULL_WIDTH)
           }
+          publicURL
         }
+        featuredImageUrl
       }
     }
   }

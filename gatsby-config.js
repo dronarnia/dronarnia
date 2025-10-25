@@ -5,7 +5,7 @@ module.exports = {
       "Дронарня - українські дрони для фронту",
   },
   plugins: [
-    "gatsby-plugin-fontawesome-css",
+    // "gatsby-plugin-fontawesome-css",
     "gatsby-plugin-react-helmet",
     {
       resolve: "gatsby-plugin-sass",
@@ -37,14 +37,14 @@ module.exports = {
         name: "images",
       },
     },
-    `gatsby-plugin-image`,
+    "gatsby-plugin-image",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {
       resolve: "gatsby-transformer-remark",
       options: {
         plugins: [
-          'gatsby-remark-relative-images',
+          "gatsby-remark-relative-images",
           {
             resolve: "gatsby-remark-images",
             options: {

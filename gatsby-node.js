@@ -2,6 +2,51 @@ const _ = require('lodash')
 const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
 
+exports.createSchemaCustomization = ({ actions, schema }) => {
+  const { createTypes } = actions
+
+  const typeDefs = `
+    type MarkdownRemarkFrontmatter {
+      featuredImage: File @fileByRelativePath
+    }
+  `
+
+  createTypes(typeDefs)
+
+  createTypes([
+    schema.buildObjectType({
+      name: 'MarkdownRemarkFrontmatter',
+      fields: {
+        featuredImageUrl: {
+          type: 'String',
+          resolve: (source) => {
+            // Якщо featuredImage - це строка (URL), повертаємо її
+            if (typeof source.featuredImage === 'string' &&
+                (source.featuredImage.startsWith('http://') ||
+                 source.featuredImage.startsWith('https://'))) {
+              return source.featuredImage
+            }
+            return null
+          }
+        }
+      }
+    })
+  ])
+}
+
+exports.onCreateNode = ({ node, actions, getNode, createNodeId, createContentDigest }) => {
+  const { createNodeField, createNode } = actions
+
+  if (node.internal.type === `MarkdownRemark`) {
+    const value = createFilePath({ node, getNode })
+    createNodeField({
+      name: `slug`,
+      node,
+      value,
+    })
+  }
+}
+
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
 
@@ -69,17 +114,4 @@ exports.createPages = ({ actions, graphql }) => {
       })
     })
   })
-}
-
-exports.onCreateNode = ({ node, actions, getNode }) => {
-  const { createNodeField } = actions
-
-  if (node.internal.type === `MarkdownRemark`) {
-    const value = createFilePath({ node, getNode })
-    createNodeField({
-      name: `slug`,
-      node,
-      value,
-    })
-  }
 }

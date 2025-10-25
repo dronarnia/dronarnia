@@ -1,9 +1,21 @@
 import * as React from "react";
 import PropTypes from "prop-types";
 import { GatsbyImage } from "gatsby-plugin-image";
+import defaultLogo from "../img/dronarnia/dronarnia_logo_grey.svg";
 
-const PreviewCompatibleImage = ({ imageInfo }) => {
-  const imageStyle = { borderRadius: "5px" };
+const PreviewCompatibleImage = ({ imageInfo, imageUrl }) => {
+  const imageStyle = { borderRadius: "5px", width: "100%", height: "auto" };
+  const defaultImage = defaultLogo;
+
+  // Якщо є зовнішній URL
+  if (imageUrl) {
+    return <img style={imageStyle} src={imageUrl} alt="" />;
+  }
+
+  // Якщо imageInfo не передано або null
+  if (!imageInfo) {
+    return <img style={imageStyle} src={defaultImage} alt="" />;
+  }
 
   const {
     alt = "",
@@ -29,9 +41,10 @@ const PreviewCompatibleImage = ({ imageInfo }) => {
     );
     // for Netlify CMS
   } else if (image) {
-    return <img style={{imageStyle}} src={image} alt={alt} />;
+    return <img style={imageStyle} src={image} alt={alt} />;
   } else {
-    return null
+    // Дефолтна картинка якщо нічого не знайдено
+    return <img style={imageStyle} src={defaultImage} alt="" />;
   }
 };
 
@@ -41,7 +54,8 @@ PreviewCompatibleImage.propTypes = {
     childImageSharp: PropTypes.object,
     image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
     style: PropTypes.object,
-  }).isRequired,
+  }),
+  imageUrl: PropTypes.string,
 };
 
 export default PreviewCompatibleImage;

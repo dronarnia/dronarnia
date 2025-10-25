@@ -23,9 +23,10 @@ const Navbar = () => {
             aria-expanded={isActive}
             onClick={() => setIsActive(!isActive)}
           >
-            <span />
-            <span />
-            <span />
+            <span/>
+            <span/>
+            <span/>
+            {/* &nbsp; */}
           </button>
         </div>
         <div id="navMenu" className={` navbar-start has-text-centered navbar-menu ${isActive && "is-active"}`}>
